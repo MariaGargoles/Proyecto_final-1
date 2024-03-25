@@ -1,30 +1,52 @@
 
 
-/*@media only screen and (max-width: 600px) {*/
+@media only screen and (max-width: 600px) {
     .ContainerNav {
       background-color: #FFFFFF;
       display: inline-block;
-      border-bottom: 0.1em solid black;
+      border-radius: 0.2em;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+      width: 100%;
 
-      &__Section {
+
+
+      &__Section__1 {
+        
         display: inline-block;
+        &__img {
+          cursor: pointer;
+          padding-left: 12em;
+        }
+        
+      }
+
+      &__Section__2 {
+        
+        display: inline-block;
+        
+
+        
+        
       }
   
       &__Text {
         color: #08A6E4;
-        
+        margin: 0.5em;
+        display: inline-block;
       }
   
       &__List {
         list-style-type: none;
-        padding: 0;
-        margin: 0;
+        display: none;
+        visibility: hidden;
+        margin-bottom: 2em;
+        color: black;
   
         &__Items {
           color: #08A6E4;
-          margin-right: 10px; 
+          margin-right: 1em; 
         }
       }
     }
   
-  
+  } 

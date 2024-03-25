@@ -1,27 +1,42 @@
 body {
+  margin: 0;
   background-color: #FFFFFF;
 }
 
-/*@media only screen and (max-width: 600px) {*/
-.ContainerNav {
-  background-color: #FFFFFF;
-  display: inline-block;
-  border-bottom: 0.1em solid black;
-}
-.ContainerNav__Section {
-  display: inline-block;
-}
-.ContainerNav__Text {
-  color: #08A6E4;
-}
-.ContainerNav__List {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-.ContainerNav__List__Items {
-  color: #08A6E4;
-  margin-right: 10px;
+@media only screen and (max-width: 600px) {
+  .ContainerNav {
+    background-color: #FFFFFF;
+    display: inline-block;
+    border-radius: 0.2em;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    width: 100%;
+  }
+  .ContainerNav__Section__1 {
+    display: inline-block;
+  }
+  .ContainerNav__Section__1__img {
+    cursor: pointer;
+    padding-left: 12em;
+  }
+  .ContainerNav__Section__2 {
+    display: inline-block;
+  }
+  .ContainerNav__Text {
+    color: #08A6E4;
+    margin: 0.5em;
+    display: inline-block;
+  }
+  .ContainerNav__List {
+    list-style-type: none;
+    display: none;
+    visibility: hidden;
+    margin-bottom: 2em;
+    color: black;
+  }
+  .ContainerNav__List__Items {
+    color: #08A6E4;
+    margin-right: 1em;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */
