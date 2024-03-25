@@ -1,3 +1,20 @@
+body {
+  background-color: #FFFFFF;
+}
 
+.ContainerNav {
+  background-color: #FFFFFF;
+  display: inline-block;
+}
+.ContainerNav__Text {
+  color: #08A6E4;
+  display: inline-block;
+}
+.ContainerNav__List {
+  display: inline-block;
+}
+.ContainerNav__List__Items {
+  color: #08A6E4;
+}
 
 /*# sourceMappingURL=output.css.map */

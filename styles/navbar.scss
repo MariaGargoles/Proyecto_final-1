@@ -1,0 +1,23 @@
+
+.ContainerNav {
+background-color: #FFFFFF;
+display: inline-block;
+
+
+    &__Text { 
+    color: #08A6E4;
+    display: inline-block;
+}
+
+    &__List {
+    display: inline-block;
+
+    &__Items {
+        color: #08A6E4;
+    
+    }
+}
+
+   
+
+}
