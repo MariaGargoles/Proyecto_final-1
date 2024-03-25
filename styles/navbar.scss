@@ -1,30 +1,28 @@
 
 
-@media only screen and (max-width: 600px) {
+
     .ContainerNav {
       background-color: #FFFFFF;
       display: inline-block;
       border-radius: 0.2em;
-      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+      box-shadow: 0em 0.1em 0.1em rgba(0, 0, 0, 0.5);
       width: 100%;
 
 
 
       &__Section__1 {
         
-        display: inline-block;
+        
+        
         &__img {
           cursor: pointer;
-          padding-left: 12em;
+         padding-left: 12em;
+          
         }
         
       }
 
       &__Section__2 {
-        
-        display: inline-block;
-        
-
         
         
       }
@@ -41,12 +39,9 @@
         visibility: hidden;
         margin-bottom: 2em;
         color: black;
+        text-transform: uppercase;
   
-        &__Items {
-          color: #08A6E4;
-          margin-right: 1em; 
-        }
+      
       }
     }
   
-  } 
