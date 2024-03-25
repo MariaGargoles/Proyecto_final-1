@@ -1,23 +1,25 @@
-
-.ContainerNav {
-background-color: #FFFFFF;
-display: inline-block;
-
-
-    &__Text { 
-    color: #08A6E4;
-    display: inline-block;
-}
-
-    &__List {
-    display: inline-block;
-
-    &__Items {
+@media only screen and (max-width: 600px) {
+    .ContainerNav {
+      background-color: #FFFFFF;
+      display: inline-block;
+  
+      &__Text {
         color: #08A6E4;
-    
+        display: inline-block;
+      }
+  
+      &__List {
+        display: inline-block;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+  
+        &__Items {
+          color: #08A6E4;
+          display: inline-block;
+          margin-right: 10px; 
+        }
+      }
     }
-}
-
-   
-
-}
+  }
+  
