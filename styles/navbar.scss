@@ -1,25 +1,30 @@
-@media only screen and (max-width: 600px) {
+
+
+/*@media only screen and (max-width: 600px) {*/
     .ContainerNav {
       background-color: #FFFFFF;
       display: inline-block;
-  
-      &__Text {
-        color: #08A6E4;
+      border-bottom: 0.1em solid black;
+
+      &__Section {
         display: inline-block;
       }
   
+      &__Text {
+        color: #08A6E4;
+        
+      }
+  
       &__List {
-        display: inline-block;
         list-style-type: none;
         padding: 0;
         margin: 0;
   
         &__Items {
           color: #08A6E4;
-          display: inline-block;
           margin-right: 10px; 
         }
       }
     }
-  }
+  
   

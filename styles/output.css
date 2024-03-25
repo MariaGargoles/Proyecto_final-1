@@ -2,26 +2,26 @@ body {
   background-color: #FFFFFF;
 }
 
-@media only screen and (max-width: 600px) {
-  .ContainerNav {
-    background-color: #FFFFFF;
-    display: inline-block;
-  }
-  .ContainerNav__Text {
-    color: #08A6E4;
-    display: inline-block;
-  }
-  .ContainerNav__List {
-    display: inline-block;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  .ContainerNav__List__Items {
-    color: #08A6E4;
-    display: inline-block;
-    margin-right: 10px;
-  }
+/*@media only screen and (max-width: 600px) {*/
+.ContainerNav {
+  background-color: #FFFFFF;
+  display: inline-block;
+  border-bottom: 0.1em solid black;
+}
+.ContainerNav__Section {
+  display: inline-block;
+}
+.ContainerNav__Text {
+  color: #08A6E4;
+}
+.ContainerNav__List {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.ContainerNav__List__Items {
+  color: #08A6E4;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=output.css.map */
