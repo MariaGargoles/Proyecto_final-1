@@ -7,16 +7,20 @@
       border-radius: 0.2em;
       box-shadow: 0em 0.1em 0.1em rgba(0, 0, 0, 0.5);
       width: 100%;
+      font-family: Raleway;
 
 
 
       &__Section__1 {
-        
+        position: relative;
+
         
         
         &__img {
           cursor: pointer;
-         padding-left: 12em;
+          position: absolute;
+          bottom: 37%;
+        right: 5%;
           
         }
         
