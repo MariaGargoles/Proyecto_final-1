@@ -1,0 +1,82 @@
+
+.containerArt {
+        padding: 1.9em;
+        text-align: center;
+    
+
+
+
+    &__title { 
+        font-family: "Raleway", sans-serif;
+        font-weight: 300;
+        font-size: 1.87em;
+        padding: 0.25em;
+
+        &__two {
+            font-family: "Raleway", sans-serif;
+            font-weight: 800;
+            font-size: 1.25em;
+
+        }
+
+    }
+
+    &__parraf {
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+        color: #A5A5A5;
+        font-size: 1em;
+        line-height: 0.5;
+
+    }
+
+
+    &__one {
+        padding-bottom: 1em;
+
+        &__rcircle {
+            transform: translateX(38%);
+        }
+
+        &__picon {
+            transform: translateY(-17%) translateX(-31%);
+
+        }
+
+    }
+
+    
+
+    &__two {
+        padding-bottom: 1em;
+
+        &__bcircle {
+            transform: translateX(58%);
+        }
+
+        &__eye {
+            transform: translateY(-39%) translateX(-14%);
+        }
+
+    }
+
+    &__three {
+
+        &__gcircle {
+            transform: translateX(50%);
+
+        }
+
+        &__group {
+            transform: translateY(-19%) translateX(-7%);
+            
+        }
+
+    }
+
+
+
+
+
+
+}

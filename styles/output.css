@@ -60,5 +60,55 @@ body {
   border: 0em;
   font-weight: 700;
 }
+.main__section__img {
+  width: 100%;
+}
+
+.containerArt {
+  padding: 1.9em;
+  text-align: center;
+}
+.containerArt__title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 1.87em;
+  padding: 0.25em;
+}
+.containerArt__title__two {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 1.25em;
+}
+.containerArt__parraf {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #A5A5A5;
+  font-size: 1em;
+  line-height: 0.5;
+}
+.containerArt__one {
+  padding-bottom: 1em;
+}
+.containerArt__one__rcircle {
+  transform: translateX(38%);
+}
+.containerArt__one__picon {
+  transform: translateY(-17%) translateX(-31%);
+}
+.containerArt__two {
+  padding-bottom: 1em;
+}
+.containerArt__two__bcircle {
+  transform: translateX(58%);
+}
+.containerArt__two__eye {
+  transform: translateY(-39%) translateX(-14%);
+}
+.containerArt__three__gcircle {
+  transform: translateX(50%);
+}
+.containerArt__three__group {
+  transform: translateY(-19%) translateX(-7%);
+}
 
 /*# sourceMappingURL=output.css.map */
