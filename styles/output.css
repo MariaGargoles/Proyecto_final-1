@@ -111,4 +111,44 @@ body {
   transform: translateY(-19%) translateX(-7%);
 }
 
+.containerShop {
+  background-color: #F7F7F7;
+  padding: 1.5em;
+}
+.containerShop__article {
+  background-color: #FFFFFF;
+  margin-bottom: 3em;
+  padding-top: 2em;
+}
+.containerShop__article__title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1.8em;
+  padding-left: 1em;
+  padding-right: 2em;
+}
+.containerShop__article__parraf {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.87em;
+  padding: 2em;
+}
+.containerShop__article__laptop {
+  transform: translateX(-36%);
+}
+.containerShop__article__frame {
+  transform: translateY(-18%) translateX(118%);
+}
+.containerShop__article__phone {
+  transform: translateX(-36%);
+}
+.containerShop__article__circle {
+  transform: translateY(-15%) translateX(64%);
+}
+.containerShop__article__trumpet {
+  background-color: #55DFB4;
+  padding-right: 2em;
+  padding-top: 2em;
+}
+
 /*# sourceMappingURL=output.css.map */
