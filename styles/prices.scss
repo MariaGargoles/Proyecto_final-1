@@ -1,0 +1,57 @@
+
+.pricescontainer {
+    
+ 
+    &__cards {
+        padding: 1em;
+        margin: 1em;
+
+        &--one {
+            border: 1px solid #FB3B64;
+            border-radius: 0.2em 0.4em;
+
+
+        }
+        &--two {
+            border: 1px solid #07ACE6;
+            border-radius: 0.2em 0.4em;
+            
+        }
+        &--three {
+            border: 1px solid #55DFB4;
+            border-radius: 0.2em 0.4em;
+            
+
+        }
+
+        &__title {
+
+        }
+
+        &__price {
+
+        }
+
+        &__limit {
+
+        }
+
+        &__list {
+
+            &--check {
+                list-style: url("../assets/Checkbox.png");
+            }
+            &--cross {
+                list-style: url("../assets/Cross.png");
+            }
+            
+
+        }
+
+        &__button {
+
+        }
+
+    }
+
+}

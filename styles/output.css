@@ -151,4 +151,27 @@ body {
   padding-top: 2em;
 }
 
+.pricescontainer__cards {
+  padding: 1em;
+  margin: 1em;
+}
+.pricescontainer__cards--one {
+  border: 1px solid #FB3B64;
+  border-radius: 0.2em 0.4em;
+}
+.pricescontainer__cards--two {
+  border: 1px solid #07ACE6;
+  border-radius: 0.2em 0.4em;
+}
+.pricescontainer__cards--three {
+  border: 1px solid #55DFB4;
+  border-radius: 0.2em 0.4em;
+}
+.pricescontainer__cards__list--check {
+  list-style: url("../assets/Checkbox.png");
+}
+.pricescontainer__cards__list--cross {
+  list-style: url("../assets/Cross.png");
+}
+
 /*# sourceMappingURL=output.css.map */
