@@ -6,6 +6,7 @@
         padding: 1em;
         margin: 1em;
 
+
         &--one {
             border: 1px solid #FB3B64;
             border-radius: 0.2em 0.4em;
@@ -37,6 +38,7 @@
         }
 
         &__list {
+            display: flex;
 
             &--check {
                 list-style: url("../assets/Checkbox.png");
@@ -50,6 +52,10 @@
 
         &__button {
 
+        }
+
+        &__text {
+            display: inline;
         }
 
     }

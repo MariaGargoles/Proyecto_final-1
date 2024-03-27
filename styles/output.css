@@ -167,11 +167,17 @@ body {
   border: 1px solid #55DFB4;
   border-radius: 0.2em 0.4em;
 }
+.pricescontainer__cards__list {
+  display: flex;
+}
 .pricescontainer__cards__list--check {
   list-style: url("../assets/Checkbox.png");
 }
 .pricescontainer__cards__list--cross {
   list-style: url("../assets/Cross.png");
+}
+.pricescontainer__cards__text {
+  display: inline;
 }
 
 /*# sourceMappingURL=output.css.map */
