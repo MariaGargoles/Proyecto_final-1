@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/output.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/output.css?545" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
     <title>Proyecto final</title>
@@ -99,7 +99,7 @@
             <h2 class="pricescontainer__title">Pricing</h2>            
                 <article class="pricescontainer__cards pricescontainer__cards--one">
                 <div class="pricescontainer__cards__text">
-                    <h4 class="pricescontainer__cards__title">Basic</h4>
+                    <h5 class="pricescontainer__cards__title">Basic</h5>
                     <p class="pricescontainer__cards__price">$0</p>
                 </div>
                 <ul class="pricescontainer__cards__list">
@@ -113,7 +113,7 @@
             </article>
             <article class="pricescontainer__cards pricescontainer__cards--two">
                 <div class="pricescontainer__cards__text">
-                    <h4 class="pricescontainer__cards__title">Professional</h4>
+                    <h5 class="pricescontainer__cards__title">Professional</h5>
                     <p class="pricescontainer__cards__price">$25</p>
                     <h5 class="pricescontainer__cards__limit">Limited offer</h5>
                 </div>
@@ -128,8 +128,8 @@
             </article>
             <article class="pricescontainer__cards pricescontainer__cards--three">
                 <div class="pricescontainer__cards__text">
-                    <h4 class="pricescontainer__cards__title">Premium</h4>
-                    <p class="pricescontainer__cards__price">$60</p>
+                    <h5 class="pricescontainer__cards__title">Premium</h5>
+                    <p class="pricescontainer__cards__price--three">$60</p>
                     <h5 class="pricescontainer__cards__limit">Limited offer</h5>
                 </div>
                 <ul class="pricescontainer__cards__list">
@@ -143,30 +143,37 @@
             </article>
         </section>
         <!--Form-->
-        <h1 class="form__title">Any questions?</h1>
+    <section class="form">
+        <h2 class="form__title">Any questions?</h2>
         <h3 class="form__call">Leave your email address or call us!</h3>
-        <p class="form__info">info@bestshop.xyz</p>
-        <p class="form__info">123 456 789</p>
+        <div class="form__container">
+            <img src="./assets/text.png" class="form__container__img" alt="mail">
+            <p class="form__container__info">info@bestshop.xyz</p>
+        </div>
+        <div class="form__container">
+            <img src="./assets/phone.png" class="form__container__img" alt="phone">
+            <p class="form__container__info">123 456 789</p>
+        </div>
         <form>
             <label for="name"class="form__label">Name</label>
-            <input type="text" name="name"/>
+            <input type="text" name="name"class="form__label__input"/>
             <label for="mail"class="form__label">Email</label>
-            <input type="email" name="mail"/>
-            <label for="terms">
-                <input type="checkbox" name="terms"/>
-                <p class="form__text">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
-              </label>
-              <button class="form__button">send</button>
-              
-
-
+            <input type="email" name="mail"class="form__label__input"/>
+            <label for="terms" class="form__dtd">
+                <input type="checkbox" name="terms" class="form__dtd__checkbox"/>
+                <p class="form__dtd__text">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
+            </label>
+              <button class="form__dtd__button">Send</button>
         </form>
+    </section>
         <!---Footer-->
-    <footer>
-        <h1 class="ContainerNav__Text"> OXYGENShop</h1>
-        <p>© 2022 OXYGEN, All Rights Reserved</p>
-        <img src="./assets/FB.png" alt="Facebook"/>
-        <img src="./assets/X.png" alt="X logo"/>
+    <footer class="FooterContainer">
+            <img src="./assets/OXYGEN Shop.png" class="FooterContainer__Oxy"/>
+            <p class="FooterContainer__Copy">© 2022 OXYGEN, All Rights Reserved</p>
+        <div class="FooterContainer__img">
+            <img class="FooterContainer__img--facebook" src="./assets/FB.png" alt="Facebook"/>
+            <img class="FooterContainer__img--X" src="./assets/X.png" alt="X logo"/>
+        </div>
     </footer>
 
     

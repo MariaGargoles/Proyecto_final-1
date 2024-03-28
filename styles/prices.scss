@@ -10,19 +10,23 @@
  
     &__cards {
         padding: 1em;
-        margin: 1em;
         position: relative;
+        border-radius: 1em 1em;
+        margin: 2.5rem;
+        margin-bottom: 5rem;
 
 
         &--one {
             border: 1px solid #FB3B64;
-            border-radius: 1em 1em;
-            margin: 2.5rem;
-            margin-bottom: 5rem;
+            
 
         }
         &--two {
+            font-size: 0.96rem;
             border: 1px solid #07ACE6;
+
+        }
+        &--two:hover {
             border-radius: 1em 1em;
             box-shadow: 0px 0.2em 0.4em rgba(7, 172, 230, 0.4);
             margin-bottom: 5rem;
@@ -30,10 +34,7 @@
         }
         &--three {
             border: 1px solid #55DFB4;
-            border-radius: 1em 1em;
-            padding: 1rem;
-            margin: 1.9rem;
-            margin-bottom: 5rem;
+            
 
             
 
