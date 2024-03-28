@@ -64,11 +64,7 @@
             display: inline-block;
             transform: translateY(254%);
 
-            &:checked {
-                background-image: url("../assets/check.png");
-                background-repeat: no-repeat;
-                background-position: center;
-            }
+            
         }
 
         &__button {
@@ -87,3 +83,8 @@
             
         }
     }
+    .form__dtd____checkbox:checked {
+        background-image: url("../assets/check.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        }

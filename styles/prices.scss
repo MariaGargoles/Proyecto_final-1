@@ -25,14 +25,10 @@
         &--two {
             font-size: 0.96rem;
             border: 1px solid #07ACE6;
+            
 
         }
-        &--two:hover {
-            border-radius: 1em 1em;
-            box-shadow: 0px 0.2em 0.4em rgba(7, 172, 230, 0.4);
-            margin-bottom: 5rem;
-            
-        }
+           
         &--three {
             border: 1px solid #55DFB4;
             
@@ -102,6 +98,9 @@
             border: 0em;
             font-weight: 700;
             position: absolute;
+            cursor: pointer;
+
+           
 
 
             &--red {
@@ -111,10 +110,9 @@
             }
             &--blue {
                 background-color: #08A6E4;
-                box-shadow: 0px 0.2em 0.4em rgba(7, 172, 230, 0.4);
                 left: 26%;
                 top: 82%;
-
+                
             }
             &--green {
                 background-color: #55DFB4;
@@ -132,5 +130,16 @@
         }
 
     }
+    &__button--blue:hover {
+        border-radius: 1em 1em;
+        box-shadow: 0px 0.2em 0.4em rgba(7, 172, 230, 0.4);
+        margin-bottom: 5rem;
+        background-color: red;
+        
+        }
+    
+}
 
+.hover-div:hover {
+    background-color:red;
 }
