@@ -192,6 +192,15 @@ body {
   font-weight: 300;
   font-size: 2.5rem;
 }
+.pricescontainer__cards__price--basic {
+  color: #EB476E;
+}
+.pricescontainer__cards__price--professional {
+  color: #07ACE6;
+}
+.pricescontainer__cards__price--premium {
+  color: #55DFB4;
+}
 .pricescontainer__cards__limit {
   font-family: "Raleway", sans-serif;
   font-weight: 700;

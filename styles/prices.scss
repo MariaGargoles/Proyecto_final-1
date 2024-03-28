@@ -14,6 +14,7 @@
         border-radius: 1em 1em;
         margin: 2.5rem;
         margin-bottom: 5rem;
+        
 
 
         &--one {
@@ -51,7 +52,18 @@
             font-family: "Open Sans", sans-serif;
             font-weight: 300;
             font-size: 2.5rem;
+            &--basic {
+                color: #EB476E
+    
+            }
+    
+            &--professional {
+                color: #07ACE6;
+            }
+            &--premium {
+                color: #55DFB4;
 
+            }
 
         }
 
