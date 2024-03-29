@@ -228,6 +228,10 @@ body {
   display: none;
 }
 
+.azul {
+  display: none;
+}
+
 @media only screen and (min-width: 769px) {
   .containerShop {
     padding: 10rem 20rem;
@@ -248,12 +252,23 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
   }
+  .containerShop__article--two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   .containerShop__article__container__upper1 {
     grid-column: 2;
   }
   .containerShop__article__container__bottom1 {
     grid-column: 1;
     grid-row: 1;
+  }
+  .containerShop__article__container__upper2 {
+    grid-column: 1;
+    height: 1rem;
+  }
+  .containerShop__article__container__bottom2 {
+    grid-column: 2;
   }
   .containerShop__article__laptop {
     content: url("../assets/Macbook2 1.png");
@@ -263,9 +278,23 @@ body {
     content: url("../assets/Rectange 30.png");
     transform: translateY(4%) translateX(116%);
   }
+  .containerShop__article__phone {
+    content: url("../assets/iPhone2 1.png");
+    transform: translateY(-93%) translateX(36%);
+  }
+  .containerShop__article__circle {
+    content: url("../assets/Ellipse 3.png");
+    transform: translateY(6%) translateX(42%);
+  }
   .red {
     display: inline;
-    transform: translateY(-200%) translateX(15%);
+    transform: translateY(-200%) translateX(10%);
+    width: 26em;
+  }
+  .azul {
+    display: inline;
+    transform: translateY(-11px) translateX(11%);
+    width: 26em;
   }
 }
 .pricescontainer__title {

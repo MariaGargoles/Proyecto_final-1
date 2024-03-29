@@ -65,6 +65,9 @@
     .red {
         display: none;
     }
+    .azul {
+        display: none;
+    }
 
     @media only screen and (min-width: 769px) { 
 
@@ -91,8 +94,12 @@
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     gap: 5rem;
-  
+                }
 
+                &--two {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    
                 }
                 
                 &__container__upper1 {
@@ -103,9 +110,17 @@
                 &__container__bottom1 {
                     grid-column: 1;
                     grid-row: 1;
+                }
+
+                &__container__upper2 {
+                    grid-column: 1;
+                    height: 1rem;
+
+                }
+
+                &__container__bottom2 {
+                    grid-column: 2;
                     
-                    
-                
                 }
 
                 &__laptop {
@@ -119,6 +134,18 @@
                     transform: translateY(4%) translateX(116%);
     
                 }
+
+                &__phone { 
+                    content: url('../assets/iPhone2\ 1.png');
+                    transform: translateY(-93%) translateX(36%);
+    
+                }
+                &__circle {
+                    content: url('../assets/Ellipse\ 3.png');
+                    transform: translateY(6%) translateX(42%);
+        
+                   }
+
             }
 
         }
@@ -126,8 +153,13 @@
 
         .red {
             display: inline;
-            transform: translateY(-200%) translateX(15%);
+            transform: translateY(-200%) translateX(10%);
+            width: 26em;
         }
-
+        .azul {
+            display: inline;
+            transform: translateY(-11px) translateX(11%);
+            width: 26em;
+        }
 
        }
