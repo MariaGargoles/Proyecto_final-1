@@ -60,7 +60,10 @@
 
     
         }
-       
+        
+    }
+    .red {
+        display: none;
     }
 
     @media only screen and (min-width: 769px) { 
@@ -73,16 +76,22 @@
                 padding-bottom: 7rem;
                 &__title {
                     font-size: 2.25em;
+                    line-height: 0rem;
 
                 }
 
                 &__parraf { 
-                    font-size: 1rem;
+                    font-size: 1.4rem;
+                    text-align: initial;
+                    
+
                 }
 
                 &--one {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
+                    gap: 5rem;
+  
 
                 }
                 
@@ -101,13 +110,13 @@
 
                 &__laptop {
                     content: url('../assets/Macbook2\ 1.png');
-                    transform: translateY(20%) translateX(6%);                
+                    transform: translateY(29%) translateX(-40%);               
     
                 }
     
                 &__frame {
                     content: url('../assets/Rectange\ 30.png');
-                    transform: translateY(4%) translateX(181%);
+                    transform: translateY(4%) translateX(116%);
     
                 }
             }
@@ -116,11 +125,8 @@
 
 
         .red {
-            height: 4px;
-            width: 20rem;
-            background-color: #FB3B64;
-            text-align: center;
-            border: none;
+            display: inline;
+            transform: translateY(-200%) translateX(15%);
         }
 
 
