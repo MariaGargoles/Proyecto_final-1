@@ -74,9 +74,24 @@
 
     }
 
+}
 
+@media only screen and (min-width: 769px) {
 
+    .containercards {
+        display: inline-flex;
+        padding-bottom: 5rem;
+        width: 100%;
+        justify-content: space-evenly;
+        margin-top: 5rem;
+   }
 
+   .containerArt {
 
+    &__title { 
+        font-weight: 400;
+        font-size: 2.25em;
+    }
 
+   }
 }

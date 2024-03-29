@@ -14,6 +14,7 @@
 
     &__text {
         font-family: "Open Sans", sans-serif;
+        font-weight: 400;
         font-size: 1.2em;
 
     }
@@ -26,7 +27,7 @@
         color: white;
         font-size: 1rem;
         font-family: "Open Sans", sans-serif;
-        box-shadow: 0.3em 0.6em 0.8em 0 rgba(7, 172, 230, 0.29);
+        box-shadow: 0.31em 0.62em 0.87em 0 rgba(7, 172, 230, 0.29);
         border: 0em;
         font-weight: 700;
 
@@ -36,8 +37,41 @@
 
     &__img {
         width: 100%;
-        
+        background-image: url("../assets/bg1.png");
+        height: 17em;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
 }
 
+@media only screen and (min-width: 769px) {
+    .main__section {
+       
+        
+        
+    
+        &__title  {
+            font-size: 3.3rem;
+        }
+    
+        &__text {
+            font-size: 1.2em;
+
+        }
+    
+        &__buttom {
+            padding: 1.5em 10em;
+            border-radius: 2.5rem 2.5rem;
+    
+        }
+    
+        &__img {
+            background-image: url("../assets/bg2.png");
+            height: 47em;
+        }
+    
+    }
+
+}
