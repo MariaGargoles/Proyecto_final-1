@@ -224,6 +224,46 @@ body {
   padding-top: 2em;
 }
 
+@media only screen and (min-width: 769px) {
+  .containerShop {
+    padding: 10rem 20rem;
+  }
+  .containerShop__article {
+    padding-bottom: 7rem;
+  }
+  .containerShop__article__title {
+    font-size: 2.25em;
+  }
+  .containerShop__article__parraf {
+    font-size: 1rem;
+  }
+  .containerShop__article--one {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .containerShop__article__container__upper1 {
+    grid-column: 2;
+  }
+  .containerShop__article__container__bottom1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .containerShop__article__laptop {
+    content: url("../assets/Macbook2 1.png");
+    transform: translateY(20%) translateX(6%);
+  }
+  .containerShop__article__frame {
+    content: url("../assets/Rectange 30.png");
+    transform: translateY(4%) translateX(181%);
+  }
+  .red {
+    height: 4px;
+    width: 20rem;
+    background-color: #FB3B64;
+    text-align: center;
+    border: none;
+  }
+}
 .pricescontainer__title {
   text-align: center;
   font-family: "Raleway", sans-serif;
