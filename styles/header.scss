@@ -4,9 +4,7 @@
     text-align: center;
     margin-top: 3.4em;
     padding: 1em;
-    max-width: 100%;
-    overflow: hidden;
-
+    
     
 
     &__title  {
@@ -38,7 +36,7 @@
 
     &__img {
         width: 100%;
-        transform: scale(2);
+        
     }
 
 }

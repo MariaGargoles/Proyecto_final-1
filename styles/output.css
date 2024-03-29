@@ -33,14 +33,39 @@ body {
   color: black;
   text-transform: uppercase;
 }
-
+.ContainerNav__List__item {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 769px) {
+  .ContainerNav__Section__1 {
+    display: inline-flex;
+  }
+  .ContainerNav__Section__1__img {
+    bottom: 37%;
+    right: 5%;
+  }
+  .ContainerNav__Section__2 {
+    display: inline-block;
+    align-items: center;
+  }
+  .ContainerNav__List {
+    display: inline-flex;
+    visibility: visible;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .ContainerNav__List__item {
+    padding-left: 1rem;
+  }
+}
 .main__section {
   font-family: "Raleway", sans-serif;
   text-align: center;
   margin-top: 3.4em;
   padding: 1em;
-  max-width: 100%;
-  overflow: hidden;
 }
 .main__section__title {
   font-size: 2.3rem;
@@ -64,7 +89,6 @@ body {
 }
 .main__section__img {
   width: 100%;
-  transform: scale(2);
 }
 
 .containerArt {
@@ -174,6 +198,12 @@ body {
   font-size: 0.96rem;
   border: 1px solid #07ACE6;
 }
+.pricescontainer__cards--two:hover {
+  padding: 1.08em;
+  border-radius: 2em 2em;
+  box-shadow: 0rem 0.7em 0.9em rgba(7, 172, 230, 0.4);
+  margin-bottom: 5rem;
+}
 .pricescontainer__cards--three {
   border: 1px solid #55DFB4;
 }
@@ -235,6 +265,11 @@ body {
   left: 26%;
   top: 82%;
 }
+.pricescontainer__cards__button--blue:hover {
+  border-radius: 2em 2em;
+  box-shadow: 0rem 0.7em 0.9em rgba(7, 172, 230, 0.4);
+  margin-bottom: 5rem;
+}
 .pricescontainer__cards__button--green {
   background-color: #55DFB4;
   left: 20%;
@@ -244,16 +279,6 @@ body {
   display: inline-block;
   padding-left: 1rem;
   line-height: 0.5rem;
-}
-.pricescontainer__button--blue:hover {
-  border-radius: 1em 1em;
-  box-shadow: 0px 0.2em 0.4em rgba(7, 172, 230, 0.4);
-  margin-bottom: 5rem;
-  background-color: red;
-}
-
-.hover-div:hover {
-  background-color: red;
 }
 
 .form {
@@ -309,7 +334,12 @@ body {
 }
 .form__dtd__checkbox {
   display: inline-block;
-  transform: translateY(254%);
+  cursor: pointer;
+}
+.form__dtd__checkbox:checked {
+  background-image: url("../assets/check.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .form__dtd__button {
   padding: 1.5em 6em;
@@ -323,12 +353,7 @@ body {
   background-color: #08A6E4;
   box-shadow: 0px 0.3em 0.5em rgba(7, 172, 230, 0.4);
   transform: translateX(35%);
-}
-
-.form__dtd____checkbox:checked {
-  background-image: url("../assets/check.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  cursor: pointer;
 }
 
 .FooterContainer {
@@ -337,12 +362,11 @@ body {
   border-top: 1px;
   border-color: rgb(247, 247, 247);
   box-shadow: 0em -0.31em 2.4em 0em rgba(0, 0, 0, 0.5);
-  width: 100%;
   font-family: "Raleway", sans-serif;
   margin-top: 2rem;
   text-align: left;
   line-height: 0rem;
-  padding: 1.5rem 1rem 1rem;
+  padding: 1.5rem 0rem 1rem 1rem;
 }
 .FooterContainer__Copy {
   font-family: "Open Sans", sans-serif;

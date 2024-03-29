@@ -62,9 +62,13 @@
 
         &__checkbox {
             display: inline-block;
-            transform: translateY(254%);
-
+            cursor: pointer;
             
+            &:checked {
+                background-image: url("../assets/check.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                }
         }
 
         &__button {
@@ -79,12 +83,9 @@
             background-color: #08A6E4;
             box-shadow: 0px 0.3em 0.5em rgba(7, 172, 230, 0.4);
             transform: translateX(35%);
+            cursor: pointer;
         }
             
         }
     }
-    .form__dtd____checkbox:checked {
-        background-image: url("../assets/check.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        }
+    

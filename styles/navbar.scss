@@ -1,49 +1,77 @@
+.ContainerNav {
+  background-color: #FFFFFF;
+  display: inline-block;
+  box-shadow: 0em 0.18em 0.3em 0em rgba(0, 0, 0, 0.29);
+  width: 100%;
+  font-family: "Raleway", sans-serif;
 
+  &__Section__1 {
+    position: relative;
+    padding: 1rem 1rem 0.5rem 1rem;
 
+    &__img {
+      cursor: pointer;
+      position: absolute;
+      bottom: 37%;
+      right: 5%;
+    }
+  }
 
-    .ContainerNav {
-      background-color: #FFFFFF;
+  &__Text {
+    color: #08A6E4;
+    margin: 0.5em;
+    display: inline-block;
+  }
+
+  &__List {
+    list-style-type: none;
+    display: none;
+    visibility: hidden;
+    margin-bottom: 2em;
+    color: black;
+    text-transform: uppercase;
+
+    &__item {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+  }
+
+  &__Section__2 {
+    
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .ContainerNav {
+    &__Section__1 {
+      display: inline-flex;
+      
+
+      &__img {
+        
+        
+        bottom: 37%;
+        right: 5%;
+      }
+
+    }
+    &__Section__2 {
       display: inline-block;
-      box-shadow: 0em 0.18em 0.3em 0em rgba(0, 0, 0, 0.29);
-      width: 100%;
-      font-family: "Raleway", sans-serif;
-      
+      align-items: center;
+    }
+    &__List {
+      display: inline-flex;
+      visibility: visible;
+      align-items: center;
+      justify-content: space-evenly;
 
-
-
-      &__Section__1 {
-        position: relative;
-        padding: 1rem 1rem 0.5rem 1rem;
-
-
-        
-        
-        &__img {
-          cursor: pointer;
-          position: absolute;
-          bottom: 37%;
-          right: 5%;
-          
-        }
-        
-      }
-
-  
-      &__Text {
-        color: #08A6E4;
-        margin: 0.5em;
-        display: inline-block;
-      }
-  
-      &__List {
-        list-style-type: none;
-        display: none;
-        visibility: hidden;
-        margin-bottom: 2em;
-        color: black;
-        text-transform: uppercase;
-  
-      
+      &__item {
+        padding-left: 1rem;
       }
     }
-  
+  }
+}
+

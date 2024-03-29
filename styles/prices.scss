@@ -25,6 +25,11 @@
         &--two {
             font-size: 0.96rem;
             border: 1px solid #07ACE6;
+            &:hover {
+                    padding: 1.08em;
+                    border-radius: 2em 2em;
+                    box-shadow: 0rem 0.7em 0.9em rgba(7, 172, 230, 0.4);
+                    margin-bottom: 5rem;}
             
 
         }
@@ -112,6 +117,13 @@
                 background-color: #08A6E4;
                 left: 26%;
                 top: 82%;
+                &:hover {
+                    border-radius: 2em 2em;
+                    box-shadow: 0rem 0.7em 0.9em rgba(7, 172, 230, 0.4);
+                    margin-bottom: 5rem;
+                    
+                    
+                    }
                 
             }
             &--green {
@@ -128,18 +140,6 @@
             line-height: 0.5rem;
             
         }
-
-    }
-    &__button--blue:hover {
-        border-radius: 1em 1em;
-        box-shadow: 0px 0.2em 0.4em rgba(7, 172, 230, 0.4);
-        margin-bottom: 5rem;
-        background-color: red;
-        
-        }
-    
 }
 
-.hover-div:hover {
-    background-color:red;
 }
