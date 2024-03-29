@@ -8,6 +8,7 @@ body {
   display: inline-block;
   box-shadow: 0em 0.18em 0.3em 0em rgba(0, 0, 0, 0.29);
   width: 100%;
+  height: 100%;
   font-family: "Raleway", sans-serif;
 }
 .ContainerNav__Section__1 {
@@ -54,12 +55,18 @@ body {
   }
   .ContainerNav__Section__2 {
     display: inline-block;
+    cursor: pointer;
   }
   .ContainerNav__List {
     display: inline-flex;
     visibility: visible;
-    align-items: center;
-    justify-content: space-evenly;
+  }
+  .ContainerNav__List__Link {
+    text-decoration: none;
+    color: inherit;
+  }
+  .ContainerNav__List__Link:hover {
+    border-bottom: 4px solid #08A6E4;
   }
   .ContainerNav__List__item {
     padding-left: 7rem;

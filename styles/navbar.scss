@@ -3,6 +3,7 @@
   display: inline-block;
   box-shadow: 0em 0.18em 0.3em 0em rgba(0, 0, 0, 0.29);
   width: 100%;
+  height: 100%;
   font-family: "Raleway", sans-serif;
 
   &__Section__1 {
@@ -62,17 +63,34 @@
     }
     &__Section__2 {
       display: inline-block;
+      cursor: pointer;
+      
       
     }
     &__List {
       display: inline-flex;
       visibility: visible;
-      align-items: center;
-      justify-content: space-evenly;
+      
+      
+
+      &__Link {
+        text-decoration: none; 
+        color: inherit;
+        
+        
+        
+
+        &:hover {
+          border-bottom: 4px solid #08A6E4;
+          
+
+          
+        }
+      }
 
       &__item {
         padding-left: 7rem;
-
+      
       }
     }
   }
