@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/output.css?545" type="text/css" />
+    <link rel="stylesheet" href="./styles/output.css?234234" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
     <title>Proyecto final</title>
@@ -41,7 +41,7 @@
         
     </header>
         <!--Emotes y  popular-->
-        <section class="containerArt">
+        <section class="containerArt" id="whyus">
             <h2 class="containerArt__title">The most popular sales platform in country</h2>
             <article class="containerArt__one">
                 <div>
@@ -70,7 +70,7 @@
             </article>
         </section>
         <!--shop-->
-        <section class="containerShop">
+        <section class="containerShop" id="benefits">
             <article class="containerShop__article">
                 <div>
                     <img class="containerShop__article__frame" src="./assets/Frame 11.png" alt="redcircle"/>
@@ -96,7 +96,7 @@
         </section>
         <!--Prices-->
         <section class="pricescontainer">
-            <h2 class="pricescontainer__title">Pricing</h2>            
+            <h2 class="pricescontainer__title" id="prices">Pricing</h2>            
                 <article class="pricescontainer__cards pricescontainer__cards--one">
                 <div class="pricescontainer__cards__text">
                     <h5 class="pricescontainer__cards__title">Basic</h5>
@@ -159,9 +159,10 @@
             <input type="text" name="name"class="form__label__input"/>
             <label for="mail"class="form__label">Email</label>
             <input type="email" name="mail"class="form__label__input"/>
-            <label for="terms" class="form__dtd">
-                <input type="checkbox" name="terms" class="form__dtd__checkbox"/>
-                <p class="form__dtd__text">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
+            <label for="terms" class="form__dtd form__dtd--terms">
+                <input type="checkbox" name="checkbox" id="checkbox1" class="form__dtd__checkbox"/>
+                <label for="checkbox1"></label>
+                <p class="form__dtd__text">I here by give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
             </label>
               <button class="form__dtd__button">Send</button>
         </form>

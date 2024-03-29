@@ -38,6 +38,7 @@
         text-transform:uppercase ;
         padding-top: 1rem;
         padding-bottom: 1rem;
+        margin-bottom: 1rem;
 
         &__input {
             border: #FFFF;
@@ -59,16 +60,34 @@
         padding-left: 2rem;
 
         }
+        &--terms {
+            margin-top: 1rem;
 
+        }
         &__checkbox {
+            display: none;
+        }
+        
+        &__checkbox + label {
+            background-image: url(../assets/Check.png) no-repeat;
+            height: 1.25rem;
+            width: 1.25rem;
             display: inline-block;
             cursor: pointer;
-            
-            &:checked {
-                background-image: url("../assets/check.png");
-                background-repeat: no-repeat;
-                background-position: center;
-                }
+            border: 1px solid gray;
+            transform: translateY(201%);
+        }
+
+        &__checkbox:checked + label {
+            background-image: url(../assets/checked.png);
+            background-repeat: no-repeat;
+            background-color: #FFFF;
+            background-position: center;
+            height: 1.25rem;
+            width: 1.25rem;
+            display: inline-block;
+            cursor: pointer; 
+
         }
 
         &__button {
@@ -88,4 +107,5 @@
             
         }
     }
-    
+
+ 

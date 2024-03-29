@@ -46,21 +46,23 @@
 
 @media only screen and (min-width: 769px) {
   .ContainerNav {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+
     &__Section__1 {
-      display: inline-flex;
+      display: inline-block;
+      padding-left: 8rem;
       
 
       &__img {
-        
-        
-        bottom: 37%;
-        right: 5%;
+       display: none;
       }
 
     }
     &__Section__2 {
       display: inline-block;
-      align-items: center;
+      
     }
     &__List {
       display: inline-flex;
@@ -69,7 +71,8 @@
       justify-content: space-evenly;
 
       &__item {
-        padding-left: 1rem;
+        padding-left: 7rem;
+
       }
     }
   }
