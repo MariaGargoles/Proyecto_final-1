@@ -7,6 +7,8 @@
             background-color: #FFFFFF;
             margin-bottom: 3em;
             padding-top: 2em;
+            border: 1px solid #E8E9ED;   
+            border-radius: 5px;
             
 
         &__container__bottom3{
@@ -18,7 +20,8 @@
                 font-weight: 400;
                 font-size: 1.8em;
                 padding-left: 1em;
-                  padding-right: 2em;
+                padding-right: 2em;
+                line-height: 0em;
 
                     
 
@@ -75,20 +78,24 @@
     @media only screen and (min-width: 769px) { 
 
         .containerShop {
-            padding: 10rem 20rem;
+            padding: 15rem 20rem;
 
-            &__article {    
-
-                padding-bottom: 7rem;
+            &__article { 
+                padding-bottom: 5rem;
                 &__title {
-                    font-size: 2.25em;
-                    line-height: 0rem;
+                    font-size: 2em;
+                    padding-left: 1em;
+                    padding-right: 2em;
+                    line-height: 0.2em;
+                    
 
                 }
 
                 &__parraf { 
-                    font-size: 1.4rem;
-                    text-align: initial;
+                    font-size: 1.3rem;
+                    text-align: left;
+                    padding-left: 1.7em;
+                    padding-right: 2em;
                     
 
                 }
@@ -108,19 +115,25 @@
 
                 &--three {
                     display: inline-block;
-                    width: 50em;
+                    width: 41em;
                     margin-right: 2em;
                     position: absolute;
                 }
                 
                 &__container__upper1 {
-                    grid-column: 2;
+                    position: absolute;
+                    width: 50%;
+                    height: 25%;
 
                 }
 
                 &__container__bottom1 {
                     grid-column: 1;
                     grid-row: 1;
+                    padding-right: 7em;
+                    padding-top: 1em;
+                    padding-left: 1em;
+  
                 }
 
                 &__container__upper2 {
@@ -134,14 +147,18 @@
                     grid-column: 2;
                     
                 }
-
+                &__container__upper3 {
+                    padding-left: 1em;
+                    padding-top: 1em;
+                }
 
                 &__container__bottom3 {
                     display: block;
                     width: 31em;
                     position: relative;
-                    left: 61%;
-                    height: 24em;
+                    left: 56%;
+                    height: 22em;
+                    
                 }
                 &__container__bottom3movil {
                     display: none;
@@ -149,13 +166,17 @@
 
                 &__laptop {
                     content: url('../assets/Macbook2\ 1.png');
-                    transform: translateY(29%) translateX(-40%);               
+                    position: relative;
+                    left: 77%;
+                    top: 26%;              
     
                 }
     
                 &__frame {
                     content: url('../assets/Rectange\ 30.png');
-                    transform: translateY(4%) translateX(116%);
+                    position: relative;
+                    left: 75%;
+                    top: 20%
     
                 }
 
@@ -179,6 +200,8 @@
                    &__trumpet {
                     width: 100%;
                     height: 100%;
+                    border: 1px solid #E8E9ED;   
+                    border-radius: 5px;
         
                    }
 
@@ -189,12 +212,12 @@
 
         .red {
             display: inline;
-            transform: translateY(-200%) translateX(10%);
+            transform: translateY(-200%) translateX(8%);
             width: 26em;
         }
         .azul {
             display: inline;
-            transform: translateY(-11px) translateX(11%);
+            transform: translateY(-11px) translateX(8%);
             width: 26em;
         }
     }
