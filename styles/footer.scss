@@ -45,7 +45,6 @@
         .FooterContainer{
             display: flex;
             justify-content: space-between;
-            align-items: center;
             padding: 2rem 0rem 1rem 1rem;
             &__text {
                 display: flex;
@@ -54,11 +53,12 @@
             }
 
             &__img {
-                display: flex;
+                
 
             }
             &__Copy {
                 padding-left: 1rem;
+                transform: translateY(155%) translateX(-126%);
             }
             
             &__Oxy {

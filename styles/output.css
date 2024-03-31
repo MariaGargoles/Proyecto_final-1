@@ -595,18 +595,15 @@ body {
   .FooterContainer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 2rem 0rem 1rem 1rem;
   }
   .FooterContainer__text {
     display: flex;
     padding-left: 10rem;
   }
-  .FooterContainer__img {
-    display: flex;
-  }
   .FooterContainer__Copy {
     padding-left: 1rem;
+    transform: translateY(155%) translateX(-126%);
   }
   .FooterContainer__Oxy {
     padding-left: 1rem;
