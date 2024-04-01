@@ -9,10 +9,15 @@
             padding-top: 2em;
             border: 1px solid #E8E9ED;   
             border-radius: 5px;
+
+            &__container__upper1 {
+                height: 10em;
+            }
             
 
         &__container__bottom3{
             display: none;
+            width: 100%;
         }
 
             &__title {
@@ -21,7 +26,7 @@
                 font-size: 1.8em;
                 padding-left: 1em;
                 padding-right: 2em;
-                line-height: 0em;
+                
 
                     
 
@@ -36,7 +41,7 @@
             }
 
             &__laptop {
-                transform: translateX(-36%);
+                transform: translateX(21%) translateY(-85%);
 
             }
 
@@ -55,10 +60,14 @@
 
            }
 
-           &__trumpet {
+           &__trumpet3movil {
             background-color: #55DFB4;
             padding-right: 4em;
             padding-top: 2em;
+            background-image: url('../assets/Trumpet\ 2.png');
+            background-position: center;
+            background-size: cover;
+            height: 15em;
 
 
            }
@@ -118,7 +127,7 @@
 
                 &--three {
                     display: inline-block;
-                    width: 41em;
+                    width: 44em;
                     margin-right: 2em;
                     position: absolute;
                 }
@@ -157,10 +166,10 @@
 
                 &__container__bottom3 {
                     display: block;
-                    width: 31em;
+                    width: 33rem;
                     position: relative;
-                    left: 56%;
-                    height: 23em;
+                    left: 59%;
+                    height: 25rem;
                     
                 }
                 &__container__bottom3movil {
@@ -170,8 +179,9 @@
                 &__laptop {
                     content: url('../assets/Macbook2\ 1.png');
                     position: relative;
-                    left:69%;
-                    top: 26%;              
+                    left: 48%;
+                    top: 102%;
+                                  
     
                 }
     
@@ -206,6 +216,7 @@
                     height: 100%;
                     border: 1px solid #E8E9ED;   
                     border-radius: 0.31rem;
+                    background-color: #55DFB4;
         
                    }
 

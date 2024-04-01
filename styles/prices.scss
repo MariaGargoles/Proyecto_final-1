@@ -111,12 +111,12 @@
             &--red {
                 background-color: #EB476E;
                 left: 24%;
-                top: 86%;
+                top: 83%;
             }
             &--blue {
                 background-color: #08A6E4;
                 left: 26%;
-                top: 82%;
+                top: 91%;
                 &:hover {
                     border-radius: 2em 2em;
                     box-shadow: 0rem 0.7em 0.9em rgba(7, 172, 230, 0.4);
@@ -127,7 +127,7 @@
             &--green {
                 background-color: #55DFB4;
                 left: 20%;
-                top: 83%;
+                top: 90%;
             }
 
         }
@@ -140,4 +140,58 @@
         }
 }
 
+}
+
+@media only screen and (min-width: 769px) {
+
+    .pricescontainer {
+
+        &__title {
+            font-size: 2rem;
+            padding-top: 3rem;
+        }
+
+        &__container{
+        display: flex;
+        justify-content: center;
+
+        }
+     
+        &__cards {
+            font-size: 1.2rem;
+            padding: 5em;
+            border-radius: 1.5em 1.5em;
+            margin: 5rem;
+            text-align: center;
+
+            
+
+            &__title {
+                font-size: 1.4rem;
+            }
+
+
+            &__text {
+                display: block;
+                }
+            &--two {
+                &:hover {
+                padding: 6em;
+                border-radius: 2em 2em;
+                }  
+            }
+            &__button {
+                font-size: 1.2rem;
+                padding: 1em 4em;
+                border-radius: 2rem 2rem;
+
+                &--red {
+                    
+                    top: 91%;
+
+                }
+
+            }
+        }
+    }
 }
