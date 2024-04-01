@@ -259,6 +259,7 @@ body {
   }
   .containerShop__article {
     padding-bottom: 5rem;
+    display: flex;
   }
   .containerShop__article__title {
     font-size: 2em;
