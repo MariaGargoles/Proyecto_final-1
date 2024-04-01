@@ -113,28 +113,37 @@
         .form {
             margin: 3rem;
             display: flex;
-            width: 100%;
+            padding: 5rem;
 
             &__formcontainer {
                 display: inline-flex;
                 width: 50%;
                 flex-direction: column;
+                padding-left: 30rem;
             }
 
-            &__subcontainer {
+            &__imgcontainer {
                 
             }
+
+            &__label {
+                
+                &__input {
+                    padding-left: 12rem;
+                    
+                }
+            }
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+            &__dtd{
+
+                &__text {
+            
+                }
+
+                &__checkbox + label {
+                    transform: translateY(200%);
+                }
+            }  
         
         
         
