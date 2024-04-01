@@ -64,31 +64,21 @@
             margin-top: 1rem;
 
         }
-        &__checkbox {
-            display: none;
-        }
+        &__check{
+            border-radius: 0.25rem;
+            margin-right: 0.5rem;
+            width: 1.6rem;
+            height: 1.6rem;
+            appearance: none;
+            border: 0.1rem solid #707070;
+
+            &:checked {
+                background-image: url("../assets/checked.png");
+                background-repeat: no-repeat;
+                background-position: center;}
+            }
         
-        &__checkbox + label {
-            background-image: url(../assets/Check.png) no-repeat;
-            height: 1.25rem;
-            width: 1.25rem;
-            display: inline-block;
-            cursor: pointer;
-            border: 1px solid gray;
-            transform: translateY(201%);
-        }
-
-        &__checkbox:checked + label {
-            background-image: url(../assets/checked.png);
-            background-repeat: no-repeat;
-            background-color: #FFFF;
-            background-position: center;
-            height: 1.25rem;
-            width: 1.25rem;
-            display: inline-block;
-            cursor: pointer; 
-
-        }
+    
 
         &__button {
             padding: 1.5em 6em;
@@ -105,6 +95,10 @@
             cursor: pointer;
         }
             
+        }
+        .form__dtd__check:hover {
+            cursor: pointer;
+
         }
     }
 
@@ -137,11 +131,11 @@
             &__dtd{
 
                 &__text {
-            
+                    width: 50%;
                 }
 
                 &__checkbox + label {
-                    transform: translateY(200%);
+                    transform: translateY(201%);
                 }
             }  
         
