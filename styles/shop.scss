@@ -90,7 +90,9 @@
     @media only screen and (min-width: 769px) { 
 
         .containerShop {
-            padding: 15rem 20rem;
+            padding: 10rem 15rem;
+            margin-bottom: 2rem;
+            
 
             &__article { 
                 padding-bottom: 5rem;
@@ -127,9 +129,11 @@
 
                 &--three {
                     display: inline-block;
-                    width: 44em;
+                    width: 36%;
+                    height: 40%;
                     margin-right: 2em;
                     position: absolute;
+                    padding-bottom: 0rem;
                 }
                 
                 &__container__upper1 {
@@ -241,3 +245,4 @@
             width: 26em;
         }
     }
+
