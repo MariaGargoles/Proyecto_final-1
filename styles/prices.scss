@@ -19,6 +19,11 @@
 
         &--one {
             border: 1px solid #FB3B64;
+            &:hover {
+                transform: scale(1.1);
+                box-shadow: 0rem 0.7em 0.9em rgba(235, 71, 110, 0.4);
+                
+                }
             
 
         }
@@ -26,19 +31,21 @@
             font-size: 0.96rem;
             border: 1px solid #07ACE6;
             &:hover {
-                    padding: 1.08em;
-                    border-radius: 2em 2em;
+                    transform: scale(1.1);
                     box-shadow: 0rem 0.7em 0.9em rgba(7, 172, 230, 0.4);
-                    margin-bottom: 5rem;}
+                    
+                }
             
 
         }
            
         &--three {
             border: 1px solid #55DFB4;
-            
-
-            
+            &:hover {
+                transform: scale(1.1);
+                box-shadow: 0rem 0.7em 0.9em rgba(85, 223, 180);
+                
+                }
 
         }
 
@@ -112,15 +119,18 @@
                 background-color: #EB476E;
                 left: 24%;
                 top: 83%;
+                &:hover {
+                    box-shadow: 0rem 0.7em 0.9em rgba(235, 71, 110, 0.4);
+                    
+                    }
+                
             }
             &--blue {
                 background-color: #08A6E4;
                 left: 26%;
                 top: 91%;
                 &:hover {
-                    border-radius: 2em 2em;
                     box-shadow: 0rem 0.7em 0.9em rgba(7, 172, 230, 0.4);
-                    margin-bottom: 5rem;
                     }
                 
             }
@@ -128,6 +138,9 @@
                 background-color: #55DFB4;
                 left: 20%;
                 top: 90%;
+                &:hover {
+                    box-shadow: 0rem 0.7em 0.9em rgba(85, 223, 180);
+                    }
             }
 
         }
@@ -158,6 +171,7 @@
         }
      
         &__cards {
+            display: block;
             font-size: 1.2rem;
             padding: 2.5em 5em;
             border-radius: 1.5em 1.5em;
@@ -174,12 +188,7 @@
             &__text {
                 display: block;
                 }
-            &--two {
-                &:hover {
-                padding: 2em 6em;
-                border-radius: 2em 2em;
-                }  
-            }
+            
             &__button {
                 font-size: 1.2rem;
                 padding: 1em 4em;

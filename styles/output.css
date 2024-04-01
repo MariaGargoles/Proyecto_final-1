@@ -393,18 +393,24 @@ body {
 .pricescontainer__cards--one {
   border: 1px solid #FB3B64;
 }
+.pricescontainer__cards--one:hover {
+  transform: scale(1.1);
+  box-shadow: 0rem 0.7em 0.9em rgba(235, 71, 110, 0.4);
+}
 .pricescontainer__cards--two {
   font-size: 0.96rem;
   border: 1px solid #07ACE6;
 }
 .pricescontainer__cards--two:hover {
-  padding: 1.08em;
-  border-radius: 2em 2em;
+  transform: scale(1.1);
   box-shadow: 0rem 0.7em 0.9em rgba(7, 172, 230, 0.4);
-  margin-bottom: 5rem;
 }
 .pricescontainer__cards--three {
   border: 1px solid #55DFB4;
+}
+.pricescontainer__cards--three:hover {
+  transform: scale(1.1);
+  box-shadow: 0rem 0.7em 0.9em rgb(85, 223, 180);
 }
 .pricescontainer__cards__title {
   font-family: "Raleway", sans-serif;
@@ -459,20 +465,24 @@ body {
   left: 24%;
   top: 83%;
 }
+.pricescontainer__cards__button--red:hover {
+  box-shadow: 0rem 0.7em 0.9em rgba(235, 71, 110, 0.4);
+}
 .pricescontainer__cards__button--blue {
   background-color: #08A6E4;
   left: 26%;
   top: 91%;
 }
 .pricescontainer__cards__button--blue:hover {
-  border-radius: 2em 2em;
   box-shadow: 0rem 0.7em 0.9em rgba(7, 172, 230, 0.4);
-  margin-bottom: 5rem;
 }
 .pricescontainer__cards__button--green {
   background-color: #55DFB4;
   left: 20%;
   top: 90%;
+}
+.pricescontainer__cards__button--green:hover {
+  box-shadow: 0rem 0.7em 0.9em rgb(85, 223, 180);
 }
 .pricescontainer__cards__text {
   display: inline-block;
@@ -490,6 +500,7 @@ body {
     justify-content: center;
   }
   .pricescontainer__cards {
+    display: block;
     font-size: 1.2rem;
     padding: 2.5em 5em;
     border-radius: 1.5em 1.5em;
@@ -501,10 +512,6 @@ body {
   }
   .pricescontainer__cards__text {
     display: block;
-  }
-  .pricescontainer__cards--two:hover {
-    padding: 2em 6em;
-    border-radius: 2em 2em;
   }
   .pricescontainer__cards__button {
     font-size: 1.2rem;
