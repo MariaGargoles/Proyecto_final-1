@@ -24,9 +24,8 @@
                 box-shadow: 0rem 0.7em 0.9em rgba(235, 71, 110, 0.4);
                 
                 }
-            
+            }
 
-        }
         &--two {
             font-size: 0.96rem;
             border: 1px solid #07ACE6;
@@ -35,9 +34,7 @@
                     box-shadow: 0rem 0.7em 0.9em rgba(7, 172, 230, 0.4);
                     
                 }
-            
-
-        }
+            }
            
         &--three {
             border: 1px solid #55DFB4;
@@ -46,8 +43,7 @@
                 box-shadow: 0rem 0.7em 0.9em rgba(85, 223, 180);
                 
                 }
-
-        }
+            }
 
         &__title {
             font-family: "Raleway", sans-serif;
@@ -88,6 +84,7 @@
             font-family: "Open Sans", sans-serif;
             font-weight: 400;
             line-height: 2rem;
+            max-width: 30%;
 
 
             &--check {
