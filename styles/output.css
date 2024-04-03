@@ -270,7 +270,6 @@ body {
     font-size: 2em;
     padding-left: 1em;
     padding-right: 2em;
-    line-height: 0.2em;
   }
   .containerShop__article__parraf {
     font-size: 1.3rem;
@@ -282,6 +281,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
+    max-width: 100%;
   }
   .containerShop__article--two {
     display: grid;
@@ -508,7 +508,6 @@ body {
 .pricescontainer__cards__text {
   display: inline-block;
   padding-left: 1rem;
-  line-height: 0.5rem;
 }
 
 @media only screen and (min-width: 769px) {
@@ -559,7 +558,6 @@ body {
 }
 .form__container {
   display: block;
-  line-height: 0.3rem;
 }
 .form__container__info {
   display: inline-block;
@@ -639,7 +637,11 @@ body {
     display: inline-flex;
     width: 50%;
     flex-direction: column;
-    padding-left: 30rem;
+    padding-left: 20rem;
+  }
+  .form__formcontainer__info {
+    display: inline-flex;
+    padding-right: 1rem;
   }
   .form__label__input {
     padding-left: 12rem;

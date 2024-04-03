@@ -101,7 +101,7 @@
                     font-size: 2em;
                     padding-left: 1em;
                     padding-right: 2em;
-                    line-height: 0.2em;
+                    
                     
 
                 }
@@ -119,6 +119,7 @@
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     gap: 5rem;
+                    max-width: 100%;
                 }
 
                 &--two {

@@ -17,7 +17,7 @@
 
     &__container {
         display: block;
-        line-height: 0.3rem;
+        
         
 
             &__info {
@@ -114,7 +114,12 @@
                 display: inline-flex;
                 width: 50%;
                 flex-direction: column;
-                padding-left: 30rem;
+                padding-left: 20rem;
+
+                &__info{
+                    display: inline-flex;
+                    padding-right: 1rem;
+                }
             }
 
 
