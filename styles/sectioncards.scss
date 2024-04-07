@@ -1,16 +1,15 @@
 
 .containerArt {
-        padding: 1.9em;
+        
         text-align: center;
-    
-
-
+        margin: 1rem;
+        padding-bottom: 2rem;
 
     &__title { 
         font-family: "Raleway", sans-serif;
         font-weight: 300;
         font-size: 1.87em;
-        padding: 0.25em;
+        padding: 1rem;
 
         &__two {
             font-family: "Raleway", sans-serif;
@@ -26,13 +25,13 @@
         font-weight: 400;
         color: #A5A5A5;
         font-size: 1em;
-        line-height: 0.5;
+        
 
     }
 
 
     &__one {
-        padding-bottom: 1em;
+        padding-bottom: 2rem;
 
         &__rcircle {
             transform: translateX(38%);
@@ -48,7 +47,7 @@
     
 
     &__two {
-        padding-bottom: 1em;
+        padding-bottom: 2rem;
 
         &__bcircle {
             transform: translateX(58%);
@@ -61,7 +60,7 @@
     }
 
     &__three {
-
+        padding-bottom: 2rem;
         &__gcircle {
             transform: translateX(50%);
 
@@ -74,6 +73,9 @@
 
     }
 
+}
+.containercards {
+    padding-bottom: 1rem;
 }
 
 @media only screen and (min-width: 769px) {
