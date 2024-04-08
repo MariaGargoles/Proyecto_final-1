@@ -269,6 +269,9 @@ body {
     padding: 10rem 15rem;
     margin-bottom: 2rem;
   }
+  .containerShop__con {
+    margin: 2rem;
+  }
   .containerShop__article {
     padding-bottom: 5rem;
     display: flex;
@@ -539,11 +542,16 @@ body {
     margin: 3rem;
     text-align: center;
   }
+  .pricescontainer__cards__list {
+    width: 100%;
+    line-height: 3.5rem;
+  }
   .pricescontainer__cards__title {
     font-size: 1.4rem;
   }
   .pricescontainer__cards__text {
     display: block;
+    width: 100%;
   }
   .pricescontainer__cards__button {
     font-size: 1.2rem;
@@ -552,6 +560,7 @@ body {
   }
   .pricescontainer__cards__button--red {
     top: 91%;
+    left: 15%;
   }
 }
 .form {
