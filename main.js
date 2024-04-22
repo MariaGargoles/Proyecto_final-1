@@ -2,16 +2,14 @@
 
 
 
-const DisplayMenu = () =>{
-const HamburguerButton = document.getElementById("FirstBottomMenu");    
-const HamburguerMenu = document.getElementById("NavarHambuguerMenu");
-const listElements = document.getElementsByClassName("ContainerNav__List__item");
+const DisplayMenu = () => {
+    const HamburguerButton = document.getElementById("FirstBottomMenu");    
+    const HamburguerMenu = document.getElementById("NavarHambuguerMenu");
 
-HamburguerButton.addEventListener("click", (event) => {
-console.log("Click done")
-event.classList.toggle("ContainerNav__List__item--active");
-
-})
-
+    HamburguerButton.addEventListener("click", (event) => {
+        console.log("Click done")
+        HamburguerMenu.classList.toggle("ContainerNav__Section__2--active");
+    });
 }
+
 DisplayMenu();
