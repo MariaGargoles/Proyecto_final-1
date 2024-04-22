@@ -33,18 +33,33 @@ body {
 }
 .ContainerNav__List {
   list-style-type: none;
-  display: none;
-  visibility: hidden;
   margin-bottom: 2em;
-  color: black;
+  color: #A5A5A5;
   text-transform: uppercase;
+  margin-top: 1rem;
 }
 .ContainerNav__List__item {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 0.8rem;
   text-transform: uppercase;
+  padding: 1rem;
 }
+.ContainerNav__List__Link {
+  text-decoration: none;
+  color: inherit;
+}
+.ContainerNav__List__Link:active {
+  color: black;
+}
+.ContainerNav__Section__2 {
+  display: none;
+}
+.ContainerNav__Section__2--active {
+  display: block;
+  list-style-type: none;
+}
+
 @media only screen and (min-width: 769px) {
   .ContainerNav {
     display: flex;

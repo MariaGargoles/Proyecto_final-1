@@ -26,22 +26,40 @@
 
   &__List {
     list-style-type: none;
-    display: none;
-    visibility: hidden;
     margin-bottom: 2em;
-    color: black;
+    color: #A5A5A5;
     text-transform: uppercase;
+    margin-top: 1rem;
 
     &__item {
       font-family: "Open Sans", sans-serif;
       font-weight: 700;
       font-size: 0.8rem;
       text-transform: uppercase;
+      padding: 1rem;
+      
+
+      
     }
+
+    &__Link {
+        text-decoration: none; 
+        color: inherit;
+
+        &:active{
+          color: black;
+        }
+      
+      }
   }
 
   &__Section__2 {
-    
+    display: none;
+
+    &--active{
+      display: block;
+      list-style-type: none;
+    }
   }
 }
 

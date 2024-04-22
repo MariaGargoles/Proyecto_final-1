@@ -7,7 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
     <title>Proyecto final</title>
-    <script src="main.js"></script>
+    <script src="main.js" defer></script> 
+    
 </head>
 <body>
     <!---Barra de navegacion y menu-->
@@ -15,12 +16,12 @@
         <!---Oxygen-->
         <div class="ContainerNav__Section__1">
             <img src="./assets/Logo.png" alt="OXYGEN">
-            <img src="./assets/Menu.svg" class="ContainerNav__Section__1__img" alt="menu"/>
+            <img id="FirstBottomMenu"src="./assets/Menu.svg" class="ContainerNav__Section__1__img" alt="menu"/>
         </div>
         <!---Imagen y menu desplegable-->
-        <div class="ContainerNav__Section__2">
+        <div class="ContainerNav__Section__2" id="NavarHambuguerMenu">
             <!-- start menu -->
-            <ul class="ContainerNav__List">
+            <ul class="ContainerNav__List" >
                 <li class="ContainerNav__List__item"><a class="ContainerNav__List__Link" href="#whyus">Why us</a></li>
                 <li class="ContainerNav__List__item"><a class="ContainerNav__List__Link" href="#benefits">Benefits</a></li>
                 <li class="ContainerNav__List__item"><a class="ContainerNav__List__Link" href="#prices">Prices</a></li>
@@ -207,7 +208,7 @@
         </div>
     </footer>
 
-    
+
 </body>
 </html>
 
