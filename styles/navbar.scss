@@ -48,7 +48,6 @@
 @media only screen and (min-width: 769px) {
   .ContainerNav {
     display: flex;
-    margin-top: 1rem;
     justify-content: space-between;
 
     &__Section__1 {
@@ -71,6 +70,10 @@
       display: inline-flex;
       visibility: visible;
       color: #A5A5A5;
+
+      &__item{
+        padding-top: 1rem;
+      }
       
       
 

@@ -48,7 +48,6 @@ body {
 @media only screen and (min-width: 769px) {
   .ContainerNav {
     display: flex;
-    margin-top: 1rem;
     justify-content: space-between;
   }
   .ContainerNav__Section__1 {
@@ -66,6 +65,9 @@ body {
     display: inline-flex;
     visibility: visible;
     color: #A5A5A5;
+  }
+  .ContainerNav__List__item {
+    padding-top: 1rem;
   }
   .ContainerNav__List__Link {
     text-decoration: none;
@@ -121,11 +123,13 @@ body {
     font-size: 3.3rem;
   }
   .main__section__text {
-    font-size: 1.2em;
+    font-size: 1.1em;
+    padding-top: 2rem;
   }
   .main__section__buttom {
     padding: 1.5em 10em;
     border-radius: 2.5rem 2.5rem;
+    margin-top: 3rem;
   }
   .main__section__img {
     background-image: url("../assets/bg2.png");
@@ -301,10 +305,9 @@ body {
   .containerShop__article--three {
     display: inline-block;
     width: 36%;
-    height: 40%;
     margin-right: 2em;
     position: absolute;
-    padding-bottom: 0rem;
+    padding-bottom: 8rem;
   }
   .containerShop__article__container__upper1 {
     position: absolute;
@@ -344,7 +347,7 @@ body {
     content: url("../assets/Macbook2 1.png");
     position: relative;
     left: 48%;
-    top: 102%;
+    top: 94%;
   }
   .containerShop__article__frame {
     content: url("../assets/Rectange 30.png");
@@ -395,8 +398,8 @@ body {
     height: 34rem;
   }
   .containerShop__article__laptop {
-    left: 92%;
-    top: 78%;
+    left: 42%;
+    top: 166%;
   }
   .containerShop__article__frame {
     left: 111%;
@@ -561,6 +564,10 @@ body {
   .pricescontainer__cards__button--red {
     top: 91%;
     left: 15%;
+  }
+  .pricescontainer__cards__button--blue {
+    left: 17%;
+    top: 90%;
   }
 }
 .form {
