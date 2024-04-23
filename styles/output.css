@@ -108,8 +108,9 @@ body {
     color: inherit;
   }
   .ContainerNav__List__Link:hover {
-    border-bottom: 4px solid #08A6E4;
     color: black;
+    text-decoration: underline 0.3rem solid #08A6E4;
+    text-underline-offset: 2.8em;
   }
   .ContainerNav__List__item {
     padding-left: 5rem;
