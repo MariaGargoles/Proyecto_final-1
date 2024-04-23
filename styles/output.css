@@ -14,9 +14,9 @@ body {
   height: 0.6rem;
 }
 .scroll__progress {
-  width: 100%;
+  width: 0%;
   height: 100%;
-  background-color: #07ACE6;
+  background-color: red;
 }
 
 .ContainerNav {
@@ -79,6 +79,7 @@ body {
   .ContainerNav__Section__1 {
     display: inline-block;
     padding-left: 11rem;
+    padding-top: 2rem;
   }
   .ContainerNav__Section__1__img {
     display: none;
@@ -303,7 +304,7 @@ body {
     margin: 2rem;
   }
   .containerShop__article {
-    padding-bottom: 5rem;
+    padding-bottom: 8rem;
     display: flex;
   }
   .containerShop__article__title {
@@ -420,12 +421,12 @@ body {
 }
 @media only screen and (min-width: 2560px) {
   .containerShop__article__container__bottom3 {
-    width: 53rem;
+    width: 51rem;
     height: 34rem;
   }
   .containerShop__article__laptop {
-    left: 42%;
-    top: 166%;
+    left: 91%;
+    top: 77%;
   }
   .containerShop__article__frame {
     left: 111%;
@@ -433,7 +434,7 @@ body {
   }
   .containerShop__article--three {
     width: 39%;
-    height: 36%;
+    height: 43%;
     padding: 3rem;
   }
 }
@@ -748,17 +749,17 @@ body {
   .FooterContainer {
     display: flex;
     justify-content: space-around;
-    padding: 2rem 0rem 1rem 1rem;
-    width: 100%;
+    padding: 2rem 0rem 2.5rem 2rem;
+    margin: auto;
   }
   .FooterContainer__text {
     display: flex;
-    padding-left: 10rem;
     width: 50%;
   }
   .FooterContainer__Copy {
     padding-left: 1rem;
-    transform: translateY(155%) translateX(-126%);
+    transform: translateY(138%) translateX(-305%);
+    margin: auto;
   }
   .FooterContainer__Oxy {
     padding-left: 1rem;

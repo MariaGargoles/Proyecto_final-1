@@ -45,11 +45,11 @@
         .FooterContainer{
             display: flex;
             justify-content: space-around;
-            padding: 2rem 0rem 1rem 1rem;
-            width: 100%;
+            padding: 2rem 0rem 2.5rem 2rem;
+            margin: auto;
             &__text {
                 display: flex;
-                padding-left: 10rem;
+
                 width: 50%;
 
             }
@@ -60,7 +60,8 @@
             }
             &__Copy {
                 padding-left: 1rem;
-                transform: translateY(155%) translateX(-126%);
+                transform: translateY(138%) translateX(-305%);
+                margin: auto;
             }
             
             &__Oxy {
