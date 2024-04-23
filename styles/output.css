@@ -8,6 +8,17 @@ body {
   min-width: 320px;
 }
 
+.scroll {
+  position: fixed;
+  width: 100%;
+  height: 0.6rem;
+}
+.scroll__progress {
+  width: 100%;
+  height: 100%;
+  background-color: #07ACE6;
+}
+
 .ContainerNav {
   background-color: #FFFFFF;
   display: inline-block;
