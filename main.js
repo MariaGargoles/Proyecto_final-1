@@ -27,3 +27,16 @@ window.addEventListener('load', () => {
     requestAnimationFrame(update);
 });
 
+
+//boton vuelta al principio
+
+const button__scroll = document.getElementById("BtnScroll");
+
+button__scroll.addEventListener("click", () => {
+    setTimeout(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    }, 200);
+});
