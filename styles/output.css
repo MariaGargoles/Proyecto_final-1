@@ -8,23 +8,26 @@ body {
   min-width: 320px;
 }
 
-.scroll {
-  position: fixed;
-  width: 100%;
-  height: 0.6rem;
-}
 .scroll__progress {
   width: 0%;
   height: 100%;
-  background-color: red;
+  background-color: #08A6E4;
+  height: 0.6rem;
+  position: fixed;
+  top: 0;
 }
 
+@media only screen and (min-width: 769px) {
+  .scroll__progress {
+    top: auto;
+  }
+}
 .ContainerNav {
   background-color: #FFFFFF;
   display: inline-block;
   box-shadow: 0em 0.18em 0.3em 0em rgba(0, 0, 0, 0.29);
   width: 100%;
-  height: 100%;
+  top: 0;
   font-family: "Raleway", sans-serif;
 }
 .ContainerNav__Section__1 {
@@ -54,7 +57,6 @@ body {
   font-weight: 700;
   font-size: 0.8rem;
   text-transform: uppercase;
-  padding: 1rem;
 }
 .ContainerNav__List__Link {
   text-decoration: none;
@@ -73,6 +75,10 @@ body {
 
 @media only screen and (min-width: 769px) {
   .ContainerNav {
+    position: fixed;
+    z-index: 1000;
+  }
+  .ContainerNav__Content {
     display: flex;
     justify-content: space-between;
   }
@@ -146,6 +152,9 @@ body {
 }
 
 @media only screen and (min-width: 769px) {
+  .main__section {
+    margin-top: 10.4em;
+  }
   .main__section__title {
     font-size: 3.3rem;
   }

@@ -3,8 +3,9 @@
   display: inline-block;
   box-shadow: 0em 0.18em 0.3em 0em rgba(0, 0, 0, 0.29);
   width: 100%;
-  height: 100%;
+  top: 0;
   font-family: "Raleway", sans-serif;
+  
 
   &__Section__1 {
     position: relative;
@@ -36,7 +37,7 @@
       font-weight: 700;
       font-size: 0.8rem;
       text-transform: uppercase;
-      padding: 1rem;
+     
       
 
       
@@ -65,8 +66,12 @@
 
 @media only screen and (min-width: 769px) {
   .ContainerNav {
-    display: flex;
+    position: fixed;
+    z-index: 1000;
+    &__Content {
+      display: flex;
     justify-content: space-between;
+    }
 
     &__Section__1 {
       display: inline-block;
