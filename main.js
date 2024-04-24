@@ -99,3 +99,6 @@ form.addEventListener("submit", (event) => {
 });
 }
 ValidarFormulario();
+
+//Mandar los datos a una API
+
