@@ -41,9 +41,19 @@
         margin-bottom: 1rem;
 
         &__input {
-            border: #FFFF;
+            border: none;
             border-bottom: 1px solid grey;
-            padding-left: 6rem;
+            width: 80%;
+            outline: none;
+        
+
+            &--green{
+                border: 0.2rem solid #07e09bcc;
+            }
+
+            &--red{
+                border: 0.2rem solid #FB3B64;
+            }
             
         }
     }
@@ -126,7 +136,7 @@
             &__label {
                 
                 &__input {
-                    padding-left: 12rem;
+                    width: 50%;
                     
                 }
             }
