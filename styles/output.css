@@ -108,7 +108,8 @@ body {
     color: inherit;
   }
   .ContainerNav__List__Link:hover {
-    border-bottom: 4px solid #08A6E4;
+    text-decoration: underline 0.3rem solid #08A6E4;
+    text-underline-offset: 2.9em;
     color: black;
   }
   .ContainerNav__List__item {
@@ -643,9 +644,15 @@ body {
   margin-bottom: 1rem;
 }
 .form__label__input {
-  border: white;
+  border: none;
   border-bottom: 1px solid grey;
   padding-left: 6rem;
+}
+.form__label__input--green {
+  border: 0.2rem solid rgba(7, 224, 155, 0.8);
+}
+.form__label__input--red {
+  border: 0.2rem solid #FB3B64;
 }
 .form__dtd {
   display: block;

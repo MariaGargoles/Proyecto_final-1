@@ -20,12 +20,9 @@ const scrollbar = document.getElementById("scroll__progress");
 
 function update() {
     scrollbar.style.width = `${(window.scrollY) / (document.body.scrollHeight - window.innerHeight) * 100}%`;
-    requestAnimationFrame(update);
+    
 }
 
-window.addEventListener('load', () => {
-    requestAnimationFrame(update);
-});
 
 
 //boton vuelta al principio
@@ -43,9 +40,27 @@ button__scroll.addEventListener("click", () => {
 
 //form
 
-const formulario = document.getElementById("form")
 
-const expresiones = {
-    nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
-    correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+
+
+const expressions = {
+    name: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
+    email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 }
+
+const ValidarFormulario = (event) => {
+    const form = document.getElementById("form")
+    const NameInput = document.getElementById("name")
+    const EmailInput = document.getElementById("email")
+    const checkbox =document.getElementById("checkbox")
+    NameInput.addEventListener("change", (event) => {
+        if (expressions.name.test(nameInput.value)) {
+            nameInput.classList.remove("form__label__input--red");
+            nameInput.classList.add("form__label__input--green");
+            errorName.textContent = "";
+        } else {
+            nameInput.classList.remove("form__label__input--green");
+            nameInput.classList.add("form__label__input--red");
+            errorName.textContent = "Nombre inválido";
+        }
+    });}
