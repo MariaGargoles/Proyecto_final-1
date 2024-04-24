@@ -646,7 +646,8 @@ body {
 .form__label__input {
   border: none;
   border-bottom: 1px solid grey;
-  padding-left: 6rem;
+  width: 80%;
+  outline: none;
 }
 .form__label__input--green {
   border: 0.2rem solid rgba(7, 224, 155, 0.8);
@@ -716,7 +717,7 @@ body {
     padding-right: 1rem;
   }
   .form__label__input {
-    padding-left: 12rem;
+    width: 50%;
   }
   .form__dtd__text {
     width: 50%;

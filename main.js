@@ -38,29 +38,64 @@ button__scroll.addEventListener("click", () => {
     }, 200);
 });
 
+
 //form
 
-
-
-
+const ValidarFormulario = () => {
 const expressions = {
-    name: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
-    email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-}
+    name: /^[a-zA-ZÀ-ÿ\s]{1,100}$/,
+    email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
+};
 
-const ValidarFormulario = (event) => {
-    const form = document.getElementById("form")
-    const NameInput = document.getElementById("name")
-    const EmailInput = document.getElementById("email")
-    const checkbox =document.getElementById("checkbox")
-    NameInput.addEventListener("change", (event) => {
-        if (expressions.name.test(nameInput.value)) {
-            nameInput.classList.remove("form__label__input--red");
-            nameInput.classList.add("form__label__input--green");
-            errorName.textContent = "";
-        } else {
-            nameInput.classList.remove("form__label__input--green");
-            nameInput.classList.add("form__label__input--red");
-            errorName.textContent = "Nombre inválido";
-        }
-    });}
+const form = document.getElementById("form");
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const checkbox = document.getElementById("checkbox");
+
+
+nameInput.addEventListener("input", () => {
+    if (expressions.name.test(nameInput.value)) {
+        nameInput.classList.remove("form__label__input--red");
+        nameInput.classList.add("form__label__input--green");
+        errorName.textContent = "";
+    } else {
+        nameInput.classList.remove("form__label__input--green");
+        nameInput.classList.add("form__label__input--red");
+        errorName.textContent = "Nombre inválido";
+    }
+});
+
+emailInput.addEventListener("input", () => {
+    if (expressions.email.test(emailInput.value)) {
+        emailInput.classList.remove("form__label__input--red");
+        emailInput.classList.add("form__label__input--green");
+        errorEmail.textContent = "";
+    } else {
+        emailInput.classList.remove("form__label__input--green");
+        emailInput.classList.add("form__label__input--red");
+        errorEmail.textContent = "Correo electrónico inválido";
+    }
+});
+
+form.addEventListener("submit", (event) => {
+    if (!expressions.name.test(nameInput.value)) {
+        event.preventDefault();
+        nameInput.classList.remove("form__label__input--green");
+        nameInput.classList.add("form__label__input--red");
+        errorName.textContent = "Por favor, ingresa un nombre válido";
+    }
+
+    if (!expressions.email.test(emailInput.value)) {
+        event.preventDefault();
+        emailInput.classList.remove("form__label__input--green");
+        emailInput.classList.add("form__label__input--red");
+        errorEmail.textContent = "Por favor, ingresa un correo electrónico válido";
+    }
+
+    if (!checkbox.checked) {
+        event.preventDefault();
+        alert("Debes aceptar los términos y condiciones");
+    }
+});
+}
+ValidarFormulario();
