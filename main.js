@@ -40,3 +40,12 @@ button__scroll.addEventListener("click", () => {
         });
     }, 200);
 });
+
+//form
+
+const formulario = document.getElementById("form")
+
+const expresiones = {
+    nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
+    correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+}
