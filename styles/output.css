@@ -108,7 +108,7 @@ body {
     color: inherit;
   }
   .ContainerNav__List__Link:hover {
-
+    color: black;
     text-decoration: underline 0.3rem solid #08A6E4;
     text-underline-offset: 2.8em;
   }
