@@ -126,11 +126,13 @@ body {
 .main__section__title {
   font-size: 2.3rem;
   font-weight: 400;
+  padding-bottom: 1rem;
 }
 .main__section__text {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1.2em;
+  padding-bottom: 1rem;
 }
 .main__section__buttom {
   padding: 1.2em 4.3em;
