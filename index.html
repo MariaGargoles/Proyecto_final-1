@@ -37,26 +37,31 @@
 
     <!---Modal-->
 
-                <dialog class="popup" id="popup">
+                <section class="popup" id="popup">
 
-                    <div class="popup_container">
+                    <div class="popup__container">
+                        <span class="popup__container__close" id="close">
+                            <img src="./assets/Vector.png" alt="close"/>
+                        </span>
+                        <div class="popup__container__img">
+                        <img src="./assets/modal.svg" class="popup__container__img--img" alt="suscribe to newsletter"/>
+                        </div>
+                        <form class="popup__container__form">
+                                    <h2 class="popup__container__title">Subscribe to our Newsletter!</h2>
 
-                        <img src="./assets/modal.svg" class="popup_container__img" alt="suscribe to newsletter"/>
-
-                        <form>
-                                    <h2 class="main__section__title">Subscribe to our newsletter!</h2>
-
-                            <label for="name"class="popup_container__label">Name</label>
-                            <input type="text" name="name" class="popup_container__label__input" id="name"/>
+                            <label for="name"class="popup__container__form__label">Name</label>
+                            <input type="text" name="name" class="popup__container__form__label__input" id="name"/>
                             
-                            <label for="mail"class="popup_container__label">Email</label>
-                            <input type="email" name="mail" class="popup_container__label__input" id="email"/>
+                            <label for="mail"class="popup__container__form__label">Email</label>
+                            <input type="email" name="mail" class="popup__container__form__label__input" id="email"/>
+
+                            <button class="popup__container__form__button">Send</button>
 
                         </form>
 
                     
                     </div>
-                </dialog>
+                </section>
 
     <!---End Modal-->  
 
