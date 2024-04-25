@@ -34,13 +34,32 @@
             <div class="scroll__progress" id="scroll__progress"></div>
             
     </nav>
-                <dialog class="popup" id="popup">
-                    <div class="popup_container">
-                        <img src="./assets/modal.svg"/>
 
+    <!---Modal-->
+
+                <dialog class="popup" id="popup">
+
+                    <div class="popup_container">
+
+                        <img src="./assets/modal.svg" class="popup_container__img" alt="suscribe to newsletter"/>
+
+                        <form>
+                                    <h2 class="main__section__title">Subscribe to our newsletter!</h2>
+
+                            <label for="name"class="popup_container__label">Name</label>
+                            <input type="text" name="name" class="popup_container__label__input" id="name"/>
+                            
+                            <label for="mail"class="popup_container__label">Email</label>
+                            <input type="email" name="mail" class="popup_container__label__input" id="email"/>
+
+                        </form>
+
+                    
                     </div>
                 </dialog>
-                
+
+    <!---End Modal-->  
+
             <header>
             
                 <!--Seccion principal de Texto-->
@@ -197,9 +216,9 @@
                 </div>
                 <form id="form">
                     <label for="name"class="form__label">Name</label>
-                    <input type="text" name="name" class="form__label__input" id="name"/>
+                    <input type="text" name="name" class="form__label__input" id="name"  required/>
                     <label for="mail"class="form__label">Email</label>
-                    <input type="email" name="mail" class="form__label__input" id="email"/>
+                    <input type="email" name="mail" class="form__label__input" id="email"  required/>
                     <label for="terms" class="form__dtd form__dtd--terms">
                         <input type="checkbox" name="checkbox" id="checkbox" class="form__dtd__check"/>
                         <p class="form__dtd__text">I here by give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
