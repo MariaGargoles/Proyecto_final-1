@@ -57,11 +57,13 @@ nameInput.addEventListener("input", () => {
     if (expressions.name.test(nameInput.value)) {
         nameInput.classList.remove("form__label__input--red");
         nameInput.classList.add("form__label__input--green");
-        errorName.textContent = "";
+        
+        
     } else {
         nameInput.classList.remove("form__label__input--green");
         nameInput.classList.add("form__label__input--red");
-        errorName.textContent = "Nombre inválido";
+        alert ('Enter name valid');
+        
     }
 });
 
@@ -69,11 +71,11 @@ emailInput.addEventListener("input", () => {
     if (expressions.email.test(emailInput.value)) {
         emailInput.classList.remove("form__label__input--red");
         emailInput.classList.add("form__label__input--green");
-        errorEmail.textContent = "";
+        
     } else {
         emailInput.classList.remove("form__label__input--green");
         emailInput.classList.add("form__label__input--red");
-        errorEmail.textContent = "Correo electrónico inválido";
+        alert ('Enter email valid');
     }
 });
 
@@ -102,3 +104,40 @@ ValidarFormulario();
 
 //Mandar los datos a una API
 
+
+const MandarDatosApi = () => {
+const form = document.getElementById("form")
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+
+    const data = {};
+    formData.forEach(function(value, key){
+        data[key] = value;
+    });
+
+    fetch('https://jsonplaceholder.typicode.com/posts', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => {
+        if (!response.ok) {
+            console.log('Error al enviar los datos a la API');
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log('Respuesta de la API:', data);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+});
+}
+
+MandarDatosApi();
