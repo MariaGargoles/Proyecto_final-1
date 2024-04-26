@@ -8,6 +8,7 @@
     position: absolute;
     
     
+    
 
     &__container {
             width: 80%;
@@ -56,6 +57,13 @@
                 width: 80%;
                 outline: none;
                 margin-bottom: 1rem;
+
+                &--green{
+                    border: 0.2rem solid #07e09bcc;
+                }
+                &--red{
+                    border: 0.2rem solid #FB3B64;
+                }
             }
 
              }

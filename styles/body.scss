@@ -7,29 +7,3 @@ body {
    min-width: 320px;
 }
 
-.scroll {
-   
-   
-   &__progress{
-      width: 0%;
-      height: 100%;
-      background-color: #08A6E4;
-      height: 0.6rem;
-      position: fixed;
-      top: 0;
-      z-index: 1000;
-   }
-}
-
-@media only screen and (min-width: 769px) {
-
-   .scroll {
-   
-   
-      &__progress{
-         top: auto;
-         
-         
-      }
-   }
-}

@@ -8,21 +8,6 @@ body {
   min-width: 320px;
 }
 
-.scroll__progress {
-  width: 0%;
-  height: 100%;
-  background-color: #08A6E4;
-  height: 0.6rem;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-}
-
-@media only screen and (min-width: 769px) {
-  .scroll__progress {
-    top: auto;
-  }
-}
 .ContainerNav {
   background-color: #FFFFFF;
   display: inline-block;
@@ -145,6 +130,7 @@ body {
   box-shadow: 0.31em 0.62em 0.87em 0 rgba(7, 172, 230, 0.29);
   border: 0em;
   font-weight: 700;
+  cursor: pointer;
 }
 .main__section__img {
   width: 100%;
@@ -777,6 +763,12 @@ body {
   outline: none;
   margin-bottom: 1rem;
 }
+.popup__container__form__label__input--green {
+  border: 0.2rem solid rgba(7, 224, 155, 0.8);
+}
+.popup__container__form__label__input--red {
+  border: 0.2rem solid #FB3B64;
+}
 .popup__container__form__button {
   padding: 1rem 2rem;
   margin: 1rem;
@@ -851,6 +843,21 @@ body {
   }
   .FooterContainer__Oxy {
     padding-left: 1rem;
+  }
+}
+.scroll__progress {
+  width: 0%;
+  height: 100%;
+  background-color: #08A6E4;
+  height: 0.6rem;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+@media only screen and (min-width: 769px) {
+  .scroll__progress {
+    top: auto;
   }
 }
 
