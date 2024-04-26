@@ -8,21 +8,6 @@ body {
   min-width: 320px;
 }
 
-.scroll__progress {
-  width: 0%;
-  height: 100%;
-  background-color: #08A6E4;
-  height: 0.6rem;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-}
-
-@media only screen and (min-width: 769px) {
-  .scroll__progress {
-    top: auto;
-  }
-}
 .ContainerNav {
   background-color: #FFFFFF;
   display: inline-block;
@@ -126,11 +111,13 @@ body {
 .main__section__title {
   font-size: 2.3rem;
   font-weight: 400;
+  padding-bottom: 1rem;
 }
 .main__section__text {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1.2em;
+  padding-bottom: 1rem;
 }
 .main__section__buttom {
   padding: 1.2em 4.3em;
@@ -143,6 +130,7 @@ body {
   box-shadow: 0.31em 0.62em 0.87em 0 rgba(7, 172, 230, 0.29);
   border: 0em;
   font-weight: 700;
+  cursor: pointer;
 }
 .main__section__img {
   width: 100%;
@@ -729,6 +717,75 @@ body {
     width: 50%;
   }
 }
+.popup {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.popup__container {
+  width: 80%;
+  height: 24rem;
+  margin: 0 auto;
+  background-color: white;
+  margin-top: 10rem;
+  display: flex;
+  padding-top: 5rem;
+  border-radius: 1rem 1rem;
+  padding-right: 2rem;
+}
+.popup__container__close {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  position: relative;
+  bottom: 20%;
+  left: 90%;
+}
+.popup__container__img {
+  width: 30%;
+  display: inline-block;
+}
+.popup__container__form {
+  width: 60%;
+  display: inline-block;
+}
+.popup__container__form__label {
+  font-family: "Open Sans", sans-serif;
+}
+.popup__container__form__label__input {
+  border: none;
+  border-bottom: 1px solid grey;
+  width: 80%;
+  outline: none;
+  margin-bottom: 1rem;
+}
+.popup__container__form__label__input--green {
+  border: 0.2rem solid rgba(7, 224, 155, 0.8);
+}
+.popup__container__form__label__input--red {
+  border: 0.2rem solid #FB3B64;
+}
+.popup__container__form__button {
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border-radius: 2rem 2rem;
+  color: white;
+  font-size: 0.9rem;
+  font-family: "Open Sans", sans-serif;
+  border: 0em;
+  font-weight: 500;
+  background-color: #08A6E4;
+}
+.popup__container__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  margin-bottom: 1rem;
+}
+
 .FooterContainer {
   background-color: #FFFFFF;
   display: inline-block;
@@ -786,6 +843,21 @@ body {
   }
   .FooterContainer__Oxy {
     padding-left: 1rem;
+  }
+}
+.scroll__progress {
+  width: 0%;
+  height: 100%;
+  background-color: #08A6E4;
+  height: 0.6rem;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+@media only screen and (min-width: 769px) {
+  .scroll__progress {
+    top: auto;
   }
 }
 

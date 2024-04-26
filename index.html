@@ -7,7 +7,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
     <title>Proyecto final</title>
-    <script src="main.js" defer></script> 
+    <script src="./js/HambMenu.js" defer></script> 
+    <script src="./js/ButtonTop.js" defer></script> 
+    <script src="./js/MenuScroll.js" defer></script> 
+    <script src="./js/Formulario.js" defer></script> 
+    <script src="./js/popup.js" defer></script> 
     
 </head>
 <body>
@@ -34,20 +38,44 @@
             <div class="scroll__progress" id="scroll__progress"></div>
             
     </nav>
-                <dialog class="popup" id="popup">
-                    <div class="popup_container">
-                        <img src="./assets/modal.svg"/>
 
+    <!---Modal-->
+
+                <dialog class="popup" id="popup">
+
+                    <div class="popup__container" id="popup__container">
+                            <span class="popup__container__close" id="close">
+                                <img src="./assets/Vector.png" alt="close"/>
+                            </span>
+                        <div class="popup__container__img">
+                             <img src="./assets/modal.svg" class="popup__container__img--img" alt="suscribe to newsletter"/>
+                        </div>
+                        <form class="popup__container__form" id="formmodal">
+                                    <h2 class="popup__container__title">Subscribe to our Newsletter!</h2>
+
+                            <label for="name"class="popup__container__form__label">Name</label>
+                                <input type="text" name="name" class="popup__container__form__label__input" id="namemodal"/>
+                            
+                            <label for="mail"class="popup__container__form__label">Email</label>
+                                <input type="email" name="mail" class="popup__container__form__label__input" id="emailmodal"/>
+
+                            <button class="popup__container__form__button" id="buttonmodal">Send</button>
+
+                        </form>
+
+                    
                     </div>
                 </dialog>
-                
+
+    <!---End Modal-->  
+
             <header>
             
                 <!--Seccion principal de Texto-->
                 <div class="main__section">
                     <h3 class="main__section__title">Sell More!</h3>
                     <p class="main__section__text">Open shop on our platform and increase your sales</p>
-                    <button class="main__section__buttom">Open your shop</button>
+                        <button class="main__section__buttom" id="button-up">Open your shop</button>
                 </div>
                 <!--Imagen de seccion principal-->
                 
@@ -197,9 +225,9 @@
                 </div>
                 <form id="form">
                     <label for="name"class="form__label">Name</label>
-                    <input type="text" name="name" class="form__label__input" id="name"/>
+                    <input type="text" name="name" class="form__label__input" id="name"  required/>
                     <label for="mail"class="form__label">Email</label>
-                    <input type="email" name="mail" class="form__label__input" id="email"/>
+                    <input type="email" name="mail" class="form__label__input" id="email"  required/>
                     <label for="terms" class="form__dtd form__dtd--terms">
                         <input type="checkbox" name="checkbox" id="checkbox" class="form__dtd__check"/>
                         <p class="form__dtd__text">I here by give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
