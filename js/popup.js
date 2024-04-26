@@ -3,15 +3,8 @@ const EventPopup = () => {
   const closepopup = document.getElementById("close");
   const button = document.getElementById("button-up");
 
-  button.addEventListener("click", () => {
-    console.log("click done");
-    popup.showModal();
-  });
-
   setTimeout(function () {
-    //popup.style.display = "initial";
     popup.showModal();
-    console.log("modal up");
   }, 2000);
 
   window.addEventListener("scroll", function () {
@@ -21,19 +14,15 @@ const EventPopup = () => {
 
     if (scrollPercentage >= 15) {
       popup.showModal();
-      console.log("modal scroll");
-      //popup.style.display = "initial";
     }
   });
 
   closepopup.addEventListener("click", (event) => {
-    //popup.style.display = "none";
     popup.close();
   });
 
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
-      //popup.style.display = "none";
       popup.close();
     }
   });
