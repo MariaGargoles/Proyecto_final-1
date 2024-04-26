@@ -5,17 +5,7 @@ const EventPopup = () => {
 
   setTimeout(function () {
     popup.showModal();
-  }, 2000);
-
-  window.addEventListener("scroll", function () {
-    const scrollPercentage =
-      (window.scrollY / (document.body.scrollHeight - window.innerHeight)) *
-      100;
-
-    if (scrollPercentage >= 15) {
-      popup.showModal();
-    }
-  });
+  }, 3000);
 
   closepopup.addEventListener("click", (event) => {
     popup.close();

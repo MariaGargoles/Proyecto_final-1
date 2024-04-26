@@ -11,7 +11,8 @@
     <script src="./js/ButtonTop.js" defer></script> 
     <script src="./js/MenuScroll.js" defer></script> 
     <script src="./js/Formulario.js" defer></script> 
-    <script src="./js/popup.js" defer></script> 
+    <script src="./js/popup.js" defer></script>
+    <script src="./js/coinconv.js" defer></script>  
     
 </head>
 <body>
@@ -157,12 +158,19 @@
             </section>
                 <!--Prices-->
                 <section class="pricescontainer">
-                            <h2 class="pricescontainer__title" id="prices">Pricing</h2>   
+                            <h2 class="pricescontainer__title" id="prices">Pricing</h2>
+                            
+                 <!-- Coin selector-->    
+                            <div class="pricescontainer__coincointainer" id="coins">
+                                <button type="button" id="eur" class="pricescontainer__coincointainer__button">EUR €</button>
+                                <button type="button" id="gbp" class="pricescontainer__coincointainer__button">GBP £</button>
+                                <button type="button" id="usd" class="pricescontainer__coincointainer__button">USD $</button>
+                            </div>       
                     <div class="pricescontainer__container">     
                         <article class="pricescontainer__cards pricescontainer__cards--one">
                         <div class="pricescontainer__cards__text">
                             <h5 class="pricescontainer__cards__title">Basic</h5>
-                            <p class="pricescontainer__cards__price  pricescontainer__cards__price--basic">$0</p>
+                            <p class="pricescontainer__cards__price  pricescontainer__cards__price--basic" id="basic">$0</p>
                         </div>
                         <ul class="pricescontainer__cards__list">
                             <li class="pricescontainer__cards__list--check">100 MB HDD</li>
@@ -176,7 +184,7 @@
                         <article class="pricescontainer__cards pricescontainer__cards--two">
                         <div class="pricescontainer__cards__text">
                             <h5 class="pricescontainer__cards__title">Professional</h5>
-                            <p class="pricescontainer__cards__price pricescontainer__cards__price--professional">$25</p>
+                            <p class="pricescontainer__cards__price pricescontainer__cards__price--professional" id="profesional">$25</p>
                             <h5 class="pricescontainer__cards__limit">Limited offer</h5>
                         </div>
                         <ul class="pricescontainer__cards__list">
@@ -191,7 +199,7 @@
                     <article class="pricescontainer__cards pricescontainer__cards--three">
                         <div class="pricescontainer__cards__text">
                             <h5 class="pricescontainer__cards__title">Premium</h5>
-                            <p class="pricescontainer__cards__price pricescontainer__cards__price--premium">$60</p>
+                            <p class="pricescontainer__cards__price pricescontainer__cards__price--premium" id="premium">$60</p>
                             <h5 class="pricescontainer__cards__limit">Limited offer</h5>
                         </div>
                         <ul class="pricescontainer__cards__list">

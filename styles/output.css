@@ -553,6 +553,22 @@ body {
   padding: 1rem;
   width: 50%;
 }
+.pricescontainer__coincointainer {
+  display: flex;
+  justify-content: center;
+}
+.pricescontainer__coincointainer__button {
+  padding: 0.5rem 1rem;
+  margin: 2rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: white;
+  border: 1px solid #808b96;
+  border-radius: 1em 1em;
+  background-color: #abb2b9;
+  box-shadow: 0rem 0.2em 0.4em rgba(128, 139, 150, 0.4);
+  cursor: pointer;
+}
 
 @media only screen and (min-width: 769px) {
   .pricescontainer__title {
