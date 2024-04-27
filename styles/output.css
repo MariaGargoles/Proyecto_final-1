@@ -876,5 +876,17 @@ body {
     top: auto;
   }
 }
+.slide {
+  overflow: hidden;
+}
+.slide__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 400px;
+}
+.slide__container__img {
+  width: 100%;
+}
 
 /*# sourceMappingURL=output.css.map */
