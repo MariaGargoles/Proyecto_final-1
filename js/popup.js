@@ -1,21 +1,34 @@
 const EventPopup = () => {
   const popup = document.getElementById("popup");
   const closepopup = document.getElementById("close");
-  const button = document.getElementById("button-up");
+
+  localStorage.setItem("NewsletterArcv", "true");
 
   setTimeout(function () {
-    popup.showModal();
-  }, 3000);
+    if (localStorage.getItem("NewsletterArcv") !== true) {
+      popup.showModal();
+    }
+  }, 5000);
+
+  window.addEventListener("scroll", () => {
+    if (
+      window.scrollY / document.documentElement.scrollHeight >= 0.25 &&
+      localStorage.getItem("NewsletterArcv") !== "true"
+    ) {
+      popup.showModal();
+    }
+  });
 
   closepopup.addEventListener("click", (event) => {
+    console.log(popup);
     popup.close();
   });
 
-  document.addEventListener("keydown", (event) => {
+  /*document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
       popup.close();
     }
-  });
+  });*/
 };
 EventPopup();
 
