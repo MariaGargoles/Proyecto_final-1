@@ -1,16 +1,31 @@
-.slide{
+.slider{
     overflow: hidden;
+    margin: 1.5rem;
+   
 &__container{
 
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     height: 400px;
+    
 
     &__img {
         width: 100%;
+        border: 0.1rem solid #55DFB4;
+        border-radius: 2rem 2rem;
+        box-shadow: 0rem 0.3em 0.3em rgba(85, 223, 180);
     }
     
+    &__boton--izquierdo {
+
+         
+
+    }
+
+    &__boton--derecho {
+
+    }
 
 }
 }

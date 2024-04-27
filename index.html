@@ -12,7 +12,8 @@
     <script src="./js/MenuScroll.js" defer></script> 
     <script src="./js/Formulario.js" defer></script> 
     <script src="./js/popup.js" defer></script>
-    <script src="./js/coinconv.js" defer></script>  
+    <script src="./js/coinconv.js" defer></script> 
+    <script src="./js/slide.js" defer></script>   
     
 </head>
 <body>
@@ -215,16 +216,27 @@
                 </section>
 
                 <!--Slide-->
-                <div class="slide" id="slider">
-                <div class="slide__container" id="slider">
-                    <img src="./slideimg/slider1.jpg" alt="imagen slider 1" class="slide__container__img"/>
-                    <img src="./slideimg/slider2.jpg" alt="" class="slide__container__img"/>
-                    <img src="./slideimg/slider3.jpg" alt="" />
-                    <img src="./slideimg/slider4.jpg" alt="" class="slide__container__img"/>
-                    <img src="./slideimg/slider5.jpg" alt="" class="slide__container__img"/>
+                <section class="slider" id="slider">
+                    <div class="slider__container">
+                        <img src="" name="img" class="slider__container__img"alt="">
+                    </div>
 
-                </div>
-                </div>
+                        <div class="slider__container__boton--izquierdo">
+                            <img src="./slidericons/bxs-left-arrow.svg" id="slider-boton-prev">
+                        </div>
+
+                        <div class="slider__container__boton--derecho"> 
+                            <img src="./slidericons/bxs-right-arrow.svg" id="slider-boton-next" >
+                        </div>
+
+                            <ol class="slider__container__dots">
+                                <li  class="slider__container__dotsnav" id="img-dot-1"></li>
+                                <li  class="slider__container__dotsnav" id="img-dot-2"></li>
+                                <li  class="slider__container__dotsnav" id="img-dot-3"></li>
+                                <li  class="slider__container__dotsnav" id="img-dot-4"></li>
+                                <li  class="slider__container__dotsnav" id="img-dot-5"></li>
+                            </ol>
+                </section>
                 <!--Form-->
             <section class="form" id="contact">
                 <div class="form__formcontainer">
