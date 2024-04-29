@@ -20,15 +20,14 @@ const EventPopup = () => {
   });
 
   closepopup.addEventListener("click", (event) => {
-    console.log(popup);
     popup.close();
   });
 
-  /*document.addEventListener("keydown", (event) => {
+  document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
       popup.close();
     }
-  });*/
+  });
 };
 EventPopup();
 
@@ -91,6 +90,7 @@ ValidarFormularioModal();
 
 const MandarDatosApiModal = () => {
   const form = document.getElementById("formmodal");
+  const popup = document.getElementById("popup");
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -117,6 +117,7 @@ const MandarDatosApiModal = () => {
       })
       .then((data) => {
         console.log("Respuesta de la API:", data);
+        popup.close();
       })
       .catch((error) => {
         console.error("Error:", error);
