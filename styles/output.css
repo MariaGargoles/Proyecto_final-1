@@ -43,6 +43,7 @@ body {
   font-weight: 700;
   font-size: 0.8rem;
   text-transform: uppercase;
+  margin: 1rem;
 }
 .ContainerNav__List__Link {
   text-decoration: none;
@@ -917,6 +918,11 @@ body {
   border: 0.1rem solid #55DFB4;
   border-radius: 2rem 2rem;
   box-shadow: 0rem 0.3em 0.3em rgb(85, 223, 180);
+}
+.slider__container__boton {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=output.css.map */

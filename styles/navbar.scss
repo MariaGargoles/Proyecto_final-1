@@ -16,6 +16,7 @@
       position: absolute;
       bottom: 37%;
       right: 5%;
+      
     }
   }
 
@@ -37,6 +38,7 @@
       font-weight: 700;
       font-size: 0.8rem;
       text-transform: uppercase;
+      margin: 1rem;
      
       
 
@@ -60,6 +62,7 @@
     &--active{
       display: block;
       list-style-type: none;
+      
     }
   }
 }
