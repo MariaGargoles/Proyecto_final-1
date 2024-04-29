@@ -22,6 +22,7 @@
             border-radius: 1rem 1rem;
             padding-right: 2rem;
             position: absolute;
+            justify-content: center;
             
             
 
@@ -100,13 +101,14 @@
             
 
         &__close {
+            padding: 1rem;
             
         }    
         &__img {
            
 
             &--img{
-                width: 100%;
+                width: 40%;
 
             }
         }
@@ -114,13 +116,16 @@
 
         &__form{
             
-            
+            padding: 1rem;
 
 
             &__label {
+                padding: 2rem;
+                margin-right: 3rem;
                 
 
             &__input {
+                
                 
 
               
@@ -129,11 +134,14 @@
              }
              &__button {
                 padding: 1.5rem 3rem;
+                position: relative;
+                left: 80%;
                 
              }
             }   
             &__title {
-                font-size: 1.3em;
+                font-size: 2em;
+                margin-bottom: 2rem;
             }
     }
 }

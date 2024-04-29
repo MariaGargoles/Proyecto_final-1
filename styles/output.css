@@ -753,6 +753,7 @@ body {
   border-radius: 1rem 1rem;
   padding-right: 2rem;
   position: absolute;
+  justify-content: center;
 }
 .popup__container__close {
   margin-top: 1rem;
@@ -804,14 +805,27 @@ body {
 }
 
 @media only screen and (min-width: 769px) {
+  .popup__container__close {
+    padding: 1rem;
+  }
   .popup__container__img--img {
-    width: 100%;
+    width: 40%;
+  }
+  .popup__container__form {
+    padding: 1rem;
+  }
+  .popup__container__form__label {
+    padding: 2rem;
+    margin-right: 3rem;
   }
   .popup__container__form__button {
     padding: 1.5rem 3rem;
+    position: relative;
+    left: 80%;
   }
   .popup__container__title {
-    font-size: 1.3em;
+    font-size: 2em;
+    margin-bottom: 2rem;
   }
 }
 .FooterContainer {
