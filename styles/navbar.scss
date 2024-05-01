@@ -11,11 +11,18 @@
     position: relative;
     padding: 1rem 1rem 0.5rem 1rem;
 
+  
+
     &__img {
       cursor: pointer;
       position: absolute;
       bottom: 37%;
       right: 5%;
+
+      &--off {
+        content: url('../assets/Vector.png');
+        width: 1.3rem;
+      }
       
     }
   }

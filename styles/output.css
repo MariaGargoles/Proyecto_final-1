@@ -26,6 +26,10 @@ body {
   bottom: 37%;
   right: 5%;
 }
+.ContainerNav__Section__1__img--off {
+  content: url("../assets/Vector.png");
+  width: 1.3rem;
+}
 .ContainerNav__Text {
   color: #08A6E4;
   margin: 0.5em;
